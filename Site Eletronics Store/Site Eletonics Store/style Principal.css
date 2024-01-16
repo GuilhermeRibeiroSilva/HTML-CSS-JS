@@ -1,0 +1,4837 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'inter','sans-serif';
+    }
+    button {
+        border: 0;
+        padding: 0;
+        font-family: inherit;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+      .navbar { /*'mexe na barra toda*/
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1920px;
+        height: 140px;
+        background: #328EF0;
+        color: #f9f9f9;
+        font-family: "Inter";
+        box-sizing: border-box;
+      }
+      .navbar-overlay {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.356);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .navbar-menu {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        translate: -100% 0;
+        width: 270px;
+        height: 1920px;
+        padding: 20px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #000000;
+        visibility: hidden;
+        transition: translate 0.3s;
+      }
+      body.open .navbar-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+      .navbar-burger {  /*mexe no menu*/
+        position: absolute;
+        display: grid;
+        place-items: center;
+        width: 75px;
+        height: 57px;
+        left: 62px;
+        top: 37px;
+        padding: 0;
+      }
+      .navbar-menu > button {
+        color: rgb(255, 255, 255);
+        background: transparent;
+        padding: 0 8px;
+      }
+      .navbar-menu > a > button.active {
+        margin-top: 15px;
+        font-size: 27px;
+        color: #C9CACA;
+      }
+       summary {
+        color: #C9CACA;
+        font-size: 27px;
+        margin-top: 15px;
+      }
+      p{
+        color: #C9CACA;
+        text-align: left;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: -8px;
+      }
+      a{
+        color: inherit;
+        text-decoration: none;
+    }
+    input[type=text] {
+        background-color: #C9CACA;
+        width: 150px;
+        height: 20px;
+        border-radius: 7px;
+        border: 3px solid #000000;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      input[type=text]:focus {
+        width: 80%;
+      }
+      .navbar-menu {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        translate: -100% 0;
+        width: 270px;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #328EF0;
+        visibility: hidden;
+        transition: translate 0.3s;
+      } 
+      body.open .navbar-menu {
+        translate: 0 0;
+        visibility: visible;
+      }
+        #logo{
+        position: absolute;
+        width: 166px;
+        height: 140px;
+        left: 172px;
+        top: -5px;
+        }
+        #carrinho{
+        position: absolute;
+        width: 70px;
+        height: 62px;
+        left: 1799px;
+        top: 34px;
+        }
+#meio{
+position: absolute;
+width: 1920px;
+height: 1320px;
+left: 0px;
+top: 120px;  
+}
+#quartogamer{
+position: absolute;
+width: 1920px;
+height: 603px;
+left: 0px;
+top: 19px;   
+}
+#tudoparagamers{
+position: absolute;
+width: 490px;
+height: 68px;
+left: 1397px;
+top: 225px;
+font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+color: #C9CACA;
+}
+#eletronicsstore{
+position: absolute;
+width: 362px;
+height: 68px;
+left: 1508px;
+top: 157px; 
+font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+color: #C9CACA;  
+}
+#hardwarebox{
+position: absolute;
+width: 400px;
+height: 350px;
+left: 159px;
+top: 896px;
+background: #3252F0;
+border-radius: 20px;  
+}
+#hardwareimg{
+position: absolute;
+width: 210px;
+height: 132px;
+left: 95px;
+top: 65px;
+}
+#hardwarepalavra{
+position: absolute;
+width: 194px;
+height: 40px;
+left: 110px;
+top: 225px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px; 
+color: #C9CACA; 
+}
+#perifericosbox{
+position: absolute;
+width: 400px;
+height: 350px;
+left: 1361px;
+top: 896px;
+background: #3252F0;
+border-radius: 20px;
+}
+#espacogamerimg{
+position: absolute;
+width: 210px;
+height: 132px;
+left: 50px;
+top: 60px;   
+}
+#perifericosimg{
+position: absolute;
+width: 210px;
+height: 132px;
+left: 155px;
+top: 60px;
+}
+#perifericospalavra{
+position: absolute;
+width: 197px;
+height: 40px;
+left: 100px;
+top: 229px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+color: #C9CACA;
+}
+#computadoresbox{
+position: absolute;
+width: 400px;
+height: 350px;
+left: 760px;
+top: 896px;
+background: #3252F0;
+border-radius: 20px;
+}
+#computadoresimg{
+position: absolute;
+width: 210px;
+height: 132px;
+left: 95px;
+top: 48px;
+}
+#computadorespalavra{
+position: absolute;
+width: 281px;
+height: 40px;
+left: 60px;
+top: 223px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px; 
+color: #C9CACA;
+}
+#departamentos{
+position: absolute;
+width: 544px;
+height: 86px;
+left: 688px;
+top: 721px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 80px; 
+color: #00B0DC;  
+}
+#meiobaixo{
+position: absolute;
+width: 1920px;
+height: 2640px;
+left: 0px;
+top: 1440px;
+background: #FFFFFF; 
+}
+#cadeirasgamers{
+position: absolute;
+width: 1100px;
+height: 275px;
+left: 410px;
+top: 60px;  
+}
+#notebooks{
+position: absolute;
+width: 500px;
+height: 423.3px;
+left: 710px;
+top: 392px;   
+}
+#item1{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 140px;
+top: 1011px;
+background: #328EF0;
+border-radius: 15px;   
+}
+#placartx3060{
+position: absolute;
+width: 200px;
+height: 200px;
+left: 34px;
+top: 0px;
+}
+#botaocomprar{
+box-sizing: border-box;
+position: absolute;
+left: 3.37%;
+right: 3%;
+top: 83.59%;
+bottom: 2.34%;
+background: #3252F0;
+border: 3px solid #4F32F0;
+border-radius: 14px;
+}
+#comprar{
+position: absolute;
+width: 117px;
+height: 30px;
+left: 83px;
+top: 377px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+color: #C9CACA;
+}
+#placa3060texto{
+position: absolute;
+width: 250px;
+height: 54px;
+left: 9px;
+top: 206px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#preco1{
+position: absolute;
+width: 180px;
+height: 29px;
+flex-shrink: 0;
+left: 50px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px; 
+color: #C9CACA;
+}
+#item2{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 577px;
+top: 1011px;
+background: #328EF0;
+border-radius: 15px; 
+}
+#monitortexto{
+position: absolute;
+left: 3.1%;
+right: 3.26%;
+top: 50%;
+bottom: 35.94%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;   
+}
+#preco2{
+position: absolute;
+width: 180px;
+height: 29px;
+left: 60px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;   
+}
+#monitorhuskyimg{
+position: absolute;
+left: 12.73%;
+right: 12.36%;
+top: 0%;
+bottom: 47.92%;   
+}
+#item3{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 1025px;
+top: 1011px;
+background: #328EF0;
+border-radius: 15px;
+}
+#preco3{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 50px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;
+}
+#notebookgameracertexto{
+position: absolute;
+left: 3.1%;
+right: 3.26%;
+top: 50%;
+bottom: 35.94%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#notebookgameracerimg{
+position: absolute;
+left: 12.73%;
+right: 12.36%;
+top: -2.08%;
+bottom: 50%;
+}
+#item4{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 1474px;
+top: 1011px;  
+background: #328EF0;
+border-radius: 15px;
+}
+#preco4{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 50px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;
+}
+#nitendotexto{
+position: absolute;
+left: 3.37%;
+right: 3%;
+top: 53.65%;
+bottom: 32.29%; 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px; 
+color: #C9CACA;
+}
+#nitendoimg{
+position: absolute;
+left: 12.41%;
+right: 12.68%;
+top: 0%;
+bottom: 47.92%;
+}
+#pcgamersmontados{
+position: absolute;
+width: 1100px;
+height: 275px;
+left: 410px;
+top: 2276px;
+}
+#item5{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 140px;
+top: 1527px; 
+background: #328EF0;
+border-radius: 15px;
+}
+#preco5{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 50px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;
+}
+#ps5texto{
+position: absolute;
+left: 3.37%;
+right: 3%;
+top: 49.74%;
+bottom: 33.44%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#ps5img{
+position: absolute;
+left: 17.98%;
+right: 17.6%;
+top: 1.82%;
+bottom: 52.34%;
+}
+#item7{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 1025px;
+top: 1527px;
+background: #328EF0;
+border-radius: 15px;
+}
+#headsettexto{
+position: absolute;
+left: 3.37%;
+right: 3%;
+top: 49.74%;
+bottom: 33.44%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#preco7{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 60px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px; 
+color: #C9CACA;
+}
+#headsetimg{
+position: absolute;
+left: 12.73%;
+right: 12.36%;
+top: 0%;
+bottom: 47.92%;
+}
+#item8{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 1474px;
+top: 1527px;
+background: #328EF0;
+opacity: 0.9;
+border-radius: 15px;
+}
+#tecladotexto{
+position: absolute;
+left: 3.45%;
+right: 2.92%;
+top: 46.08%;
+bottom: 37.09%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#preco8{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 60px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;
+}
+#tecladoimg{
+position: absolute;
+left: 12.73%;
+right: 12.36%;
+top: -2.34%;
+bottom: 50.26%;
+}
+#item6{
+position: absolute;
+width: 290px;
+height: 434px;
+left: 578px;
+top: 1527px;
+background: #328EF0;
+border-radius: 15px;
+}
+#mousetexto{
+position: absolute;
+left: 3.37%;
+right: 3%;
+top: 49.74%;
+bottom: 33.44%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #C9CACA;
+}
+#preco6{
+position: absolute;
+width: 185px;
+height: 29px;
+left: 60px;
+top: 304px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+color: #C9CACA;
+}
+#mouseimg{
+position: absolute;
+left: 17.98%;
+right: 17.98%;
+top: 3.91%;
+bottom: 50%;
+}
+#ofertas{
+position: absolute;
+width: 282px;
+height: 80px;
+left: 819px;
+top: 861px; 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 80px;
+color: #00B0DC; 
+}
+#confiraofertas {
+position: absolute;
+word-wrap:break-word;
+width: 770px;
+height: 80px;
+left: 385px;
+top: 2067px; 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 80px;
+color: #00B0DC;
+}
+  
+#botaoclique{
+box-sizing: border-box;
+position: absolute;
+width: 394px;
+height: 80px;
+left: 1161px;
+top: 2066px;
+background: #3252F0;
+border: 4px solid #4F32F0;
+border-radius: 20px;
+}
+#cliqueaqui{
+position: absolute;
+width: 269px;
+height: 45px;
+left: 1220px;
+top: 2073px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+color: #FFFFFF;
+}
+footer{
+position: absolute;
+width: 1920px;
+height: 578px;
+left: 0px;
+top: 4080px;
+background: #328EF0;
+}
+#contaepedido{
+position: absolute;
+width: 221px;
+height: 103px;
+left: 96px;
+top: 41px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #C9CACA; 
+}
+#chat{
+position: absolute;
+width: 82px;
+height: 34px;
+left: 96px;
+top: 221px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #C9CACA;    
+}
+#chatimg{
+position: absolute;
+width: 338px;
+height: 65px;
+left: 53px;
+top: 255px; 
+}
+#departamentosop{
+position: absolute;
+width: 234px;
+height: 137px;
+left: 449px;
+top: 41px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;  
+color: #C9CACA;
+}
+#institucional{
+position: absolute;
+width: 481px;
+height: 207px;
+left: 443px;
+top: 221px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+color: #C9CACA;
+}
+#pagamentoimg{
+position: absolute;
+width: 456px;
+height: 86px;
+left: 970px;
+top: 107px;
+}
+#formasdepagar{
+position: absolute;
+width: 321px;
+height: 39px;
+left: 970px;
+top: 68px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #C9CACA;
+}
+#copy{
+position: absolute;
+width: 295px;
+height: 36px;
+left: 813px;
+top: 471px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+color: #C9CACA;
+}
+#email{
+position: absolute;
+width: 452px;
+height: 75px;
+left: 960px;
+top: 266px; 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #C9CACA;
+}
+#sigaeletro{
+position: absolute;
+width: 234px;
+height: 32px;
+left: 1595px;
+top: 110px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #C9CACA;
+}
+#twiter{
+    position: absolute;
+    width: 69px;
+    height: 66px;
+    left: 1649px;
+    top: 292px;
+    background: url(imagens/twiter.png)
+}
+#whatszap{
+    position: absolute;
+    width: 75.49px;
+    height: 68px;
+    left: 1651px;
+    top: 437px;
+    background: url(imagens/whatszap.png)
+}
+#facebook{
+    position: absolute;
+    width: 52px;
+    height: 68px;
+    left: 1666px;
+    top: 150px;
+    background: url(imagens/facebook.png)
+}
+#youtube{
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 1655px;
+    top: 369px;
+    background: url(imagens/youtube.png)
+}
+#instagram{
+    position: absolute;
+    width: 69.11px;
+    height: 68px;
+    left: 1657px;
+    top: 221px;
+    background: url(imagens/instagram.png)
+}
+#emailimg{
+    position: absolute;
+    width: 58px;
+    height: 43px;
+    left: 1390px;
+    top: 290px; 
+    background: url(imagens/email.png)
+}
+@media(width: 1280px){ 
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    .navbar{
+        width: 1280px;
+        height: 120px;
+    }
+    .navbar-burger {  /*mexe no menu*/
+        width: 53px;
+        height: 39px;
+        left: 54px;
+        top: 37px;  
+      }
+      .navbar-menu > a > button.active {
+        font-size: 25px;
+      }
+    #logo{
+        width: 144px;
+        height: 120px;
+        left: 135px;
+        top: 0px;
+    }        
+    #carrinho{
+    width: 70px;
+    height: 62px;
+    left: 1164px;
+    top: 22px;
+    }
+    #meio{
+        width: 1280px;
+        height: 910px;
+        left: 0px;
+        top: 120px;
+    }
+    #quartogamer{
+        width: 1280px;
+        height: 454px;
+        left: 0px;
+        top: 0px;   
+    }
+    #tudoparagamers{
+        left: 920px;
+        top: 157px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    #eletronicsstore{
+    left: 1000px;
+    top: 100px;
+    font-size: 32px;
+    line-height: 38px;
+    }
+    #hardwarebox{
+        width: 349px;
+        height: 299px;
+        left: 54px;
+        top: 577px;  
+    }
+    #hardwareimg{
+        width: 210px;
+        height: 132px;
+        left: 70px;
+        top: 69px;
+    }
+    #hardwarepalavra{
+        width: 177px;
+        height: 40px;
+        left: 82px;
+        top: 214px;
+    }
+    #perifericosbox{
+        width: 349px;
+        height: 299px;
+        left: 876px;
+        top: 577px;
+    }
+    #espacogamerimg{
+        width: 210px;
+        height: 132px;
+        left: 17px;
+        top: 73px;  
+    }
+    #perifericosimg{
+        width: 210px;
+        height: 132px;
+        left: 122px;
+        top: 73px;
+    }
+    #perifericospalavra{
+        width: 181px;
+        height: 40px;
+        left: 75px;
+        top: 223px;
+    }
+    #computadoresbox{
+        width: 349px;
+        height: 299px;
+        left: 465px;
+        top: 577px;
+    }
+    #computadoresimg{
+        width: 210px;
+        height: 132px;
+        left: 70px;
+        top: 65px;
+    }
+    #computadorespalavra{
+        width: 258px;
+        height: 40px;
+        left: 35px;
+        top: 219px;
+    }
+    #departamentos{
+        left: 488px;
+        top: 485px;
+        font-size: 36px;
+        line-height: 45px; 
+    }
+    #meiobaixo{
+        width: 1280px;
+        height: 1960px;
+        left: 0px;
+        top: 1030px
+    }
+    #cadeirasgamers{
+        width: 800px;
+        height: 200px;
+        left: 240px;
+        top: 55px;  
+    }
+    #notebooks{
+        width: 352px;
+        height: 298px;
+        left: 454px;
+        top: 316px;  
+    }
+    #item1{
+        width: 267px;
+        height: 384px;
+        left: 39px;
+        top: 743px;   
+    }
+    #comprar{
+        left: 70px;
+        top: 333px;
+        font-size: 24px;
+    }
+    #placa3060texto{
+        width: 250px;
+        height: 54px;
+        left: 9px;
+        top: 206px;
+        font-size: 14px;
+    }
+    #preco1{
+        width: 140px;
+        height: 29px;
+        left: 64px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #item2{
+        width: 267px;
+        height: 384px;
+        left: 353px;
+        top: 743px; 
+    }
+    #monitortexto{
+        left: 3%;
+        right: 3.37%;
+        top: 52.08%;
+        bottom: 33.85%;
+        font-size: 14px;
+    }
+    #preco2{
+        width: 140px;
+        height: 29px;
+        left: 66px;
+        top: 273px;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    #monitorhuskyimg{
+    left: 10%;
+    right: 12%;
+    top: -2%;
+    bottom: 47.92%;   
+    }
+    #item3{
+        width: 267px;
+        height: 384px;
+        left: 667px;
+        top: 743px;
+    }
+    #preco3{
+        width: 140px;
+        height: 29px;
+        left: 64px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #notebookgameracertexto{
+        left: 3.37%;
+        right: 3%;
+        top: 53.65%;
+        bottom: 32.29%;
+        font-size: 14px;
+    }
+    #notebookgameracerimg{
+        left: 8.73%;
+        right: 12.36%;
+        top: -2.08%;
+        bottom: 50%;
+    }
+    #item4{
+        width: 267px;
+        height: 384px;
+        left: 978px;
+        top: 743px;
+    }
+    #preco4{
+        width: 140px;
+        height: 29px;
+        left: 64px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #nitendotexto{
+        left: 3.37%;
+        right: 3%;
+        top: 53.65%;
+        bottom: 32.29%;
+        font-size: 14px;
+    }
+    #nitendoimg{
+        left: 12.73%;
+        right: 12.36%;
+        top: 1.56%;
+        bottom: 46.35%;
+    }
+    #pcgamersmontados{
+        width: 800px;
+        height: 200px;
+        left: 220px;
+        top: 1717px;
+    }
+    #item5{
+        width: 267px;
+        height: 384px;
+        left: 39px;
+        top: 1224px;
+    }
+    #preco5{
+        width: 140px;
+        height: 29px;
+        left: 64px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #ps5texto{
+        left: 3.37%;
+        right: 3%;
+        top: 49.74%;
+        bottom: 33.44%;
+        font-size: 14px;
+    }
+    #ps5img{
+        width: 172px;
+        height: 176px;
+    }
+    #item7{
+        width: 267px;
+        height: 384px;
+        left: 667px;
+        top: 1224px;
+    }
+    #headsettexto{
+        left: 3.37%;
+        right: 3%;
+        top: 49.74%;
+        bottom: 33.44%;
+        font-size: 14px;
+    }
+    #preco7{
+        width: 140px;
+        height: 29px;
+        left: 70px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #headsetimg{
+        width: 200px;
+        height: 200px;
+    }
+    #item8{
+        width: 267px;
+        height: 384px;
+        left: 981px;
+        top: 1224px;
+    }
+    #tecladotexto{
+        left: 3.37%;
+        right: 3%;
+        top: 49.74%;
+        bottom: 33.44%;
+        font-size: 14px;
+    }
+    #preco8{
+        width: 140px;
+        height: 29px;
+        left: 70px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #tecladoimg{
+        left: 9.73%;
+        right: 12.36%;
+        top: -2.34%;
+        bottom: 50.26%;
+    }
+    #item6{
+    width: 267px;
+    height: 384px;
+    left: 353px;
+    top: 1224px;
+    }
+    #mousetexto{
+        left: 3.37%;
+        right: 3%;
+        top: 49.74%;
+        bottom: 33.44%;
+        font-size: 14px;
+    }
+    #preco6{
+        width: 140px;
+        height: 29px;
+        left: 75px;
+        top: 273px;
+        font-size: 24px;
+    }
+    #mouseimg{
+        width: 171px;
+        height: 177px;
+    }
+    #ofertas{
+        width: 167px;
+        height: 45px;
+        left: 556px;
+        top: 656px;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    #confiraofertas {
+        width: 504px;
+        height: 46px;
+        left: 248px;
+        top: 1644px;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    #botaoclique{
+    width: 230px;
+    height: 45px;
+    left: 686px;
+    top: 1645px;
+    }
+    #cliqueaqui{
+    width: 136px;
+    height: 36px;
+    left: 735px;
+    top: 1650px;   
+    font-size: 24px;
+    line-height: 30px;
+    }
+    footer{
+        width: 1280px;
+        height: 340px;
+        left: 0px;
+        top: 2990px;        
+    }
+    #contaepedido{
+        width: 135px;
+        height: 64px;
+        left: 107px;
+        top: 56px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #chat{
+        width: 63px;
+        height: 23px;
+        left: 107px;
+        top: 159px; 
+        font-size: 14px;
+        line-height: 24px;    
+    }
+    #chatimg{
+    width: 207px;
+    height: 46px;
+    left: 100px;
+    top: 181px; 
+    }
+    #departamentosop{
+        width: 227px;
+        height: 77px;
+        left: 371px;
+        top: 56px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #institucional{
+        width: 215px;
+        height: 96px;
+        left: 371px;
+        top: 159px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #pagamentoimg{
+    width: 332px;
+    height: 54px;
+    left: 630px;
+    top: 84px;
+    }
+    #formasdepagar{
+        width: 228px;
+        height: 28px;
+        left: 660px;
+        top: 55px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #copy{
+        width: 176px;
+        height: 27px;
+        left: 552px;
+        top: 287px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    #email{
+        width: 323px;
+        height: 75px;
+        left: 626px;
+        top: 157px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #sigaeletro{
+    width: 169px;
+    height: 27px;
+    left: 1080px;
+    top: 57px;
+    font-size: 14px;
+    line-height: 24px;
+    }
+    #twiter{
+    width: 39px;
+    height: 37.3px;
+    left: 1111px;
+    top: 174px;
+    background: url(imagens/twiter-menor.png);
+    }
+    #whatszap{
+    width: 39px;
+    height: 41px;
+    left: 1113px;
+    top: 255px;
+    background: url(imagens/whatszap-menor.png);
+    }
+    #facebook{
+        width: 39px;
+        height: 37px;
+        left: 1115px;
+        top: 89px;
+        background: url(imagens/facebook-menor.png);
+    }
+    #youtube{
+        width: 39px;
+        height: 39px;
+        left: 1113px;
+        top: 216px;
+        background: url(imagens/youtube-menor.png)
+    }
+    #instagram{
+        width: 39px;
+        height: 38.37px;
+        left: 1115px;
+        top: 132px;
+        background: url(imagens/instagram-menor.png);
+    }
+    #emailimg{
+    width: 28px;
+    height: 22px;
+    left: 840px;
+    top: 178px; 
+    background: url(imagens/email-menor.png);
+    }
+}
+@media(width: 1366px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 1366px;
+            height: 120px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 54px;
+            top: 37px;  
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 144px;
+            height: 120px;
+            left: 135px;
+            top: 0px;
+        }        
+        #carrinho{
+        width: 70px;
+        height: 62px;
+        left: 1260px;
+        top: 22px;
+        }
+        #meio{
+            width: 1366px;
+            height: 910px;
+            left: 0px;
+            top: 120px;
+        }
+        #quartogamer{
+            width: 1366px;
+            height: 454px;
+            left: 0px;
+            top: 0px;   
+        }
+        #tudoparagamers{
+            left: 980px;
+            top: 149px;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        #eletronicsstore{
+        left: 1059px;
+        top: 98px;
+        font-size: 32px;
+        line-height: 38px;
+        }
+        #hardwarebox{
+            width: 349px;
+            height: 299px;
+            left: 71px;
+            top: 577px;  
+        }
+        #hardwareimg{
+            width: 210px;
+            height: 132px;
+            left: 70px;
+            top: 69px;
+        }
+        #hardwarepalavra{
+            width: 177px;
+            height: 40px;
+            left: 85px;
+            top: 214px;
+        }
+        #perifericosbox{
+            width: 349px;
+            height: 299px;
+            left: 947px;
+            top: 577px;
+        }
+        #espacogamerimg{
+            width: 210px;
+            height: 132px;
+            left: 17px;
+            top: 73px;  
+        }
+        #perifericosimg{
+            width: 210px;
+            height: 132px;
+            left: 122px;
+            top: 73px;
+        }
+        #perifericospalavra{
+            width: 181px;
+            height: 40px;
+            left: 75px;
+            top: 223px;
+        }
+        #computadoresbox{
+            width: 349px;
+            height: 299px;
+            left: 509px;
+            top: 577px;
+        }
+        #computadoresimg{
+            width: 210px;
+            height: 132px;
+            left: 70px;
+            top: 65px;
+        }
+        #computadorespalavra{
+            width: 258px;
+            height: 40px;
+            left: 35px;
+            top: 219px;
+        }
+        #departamentos{
+            left: 531px;
+            top: 489px;
+            font-size: 36px;
+            line-height: 45px; 
+        }
+        #meiobaixo{
+            width: 1366px;
+            height: 1960px;
+            left: 0px;
+            top: 1030px
+        }
+        #cadeirasgamers{
+            width: 800px;
+            height: 200px;
+            left: 267px;
+            top: 61px; 
+        }
+        #notebooks{
+            width: 352px;
+            height: 298px;
+            left: 491px;
+            top: 310px; 
+        }
+        #item1{
+            width: 267px;
+            height: 384px;
+            left: 79px;
+            top: 743px;   
+        }
+        #comprar{
+            left: 70px;
+            top: 333px;
+            font-size: 24px;
+        }
+        #placa3060texto{
+            width: 250px;
+            height: 54px;
+            left: 9px;
+            top: 206px;
+            font-size: 14px;
+        }
+        #preco1{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #item2{
+            width: 267px;
+            height: 384px;
+            left: 393px;
+            top: 743px; 
+        }
+        #monitortexto{
+            left: 3%;
+            right: 3.37%;
+            top: 52.08%;
+            bottom: 33.85%;
+            font-size: 14px;
+        }
+        #preco2{
+            width: 140px;
+            height: 29px;
+            left: 66px;
+            top: 273px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        #monitorhuskyimg{
+        left: 10%;
+        right: 12%;
+        top: -2%;
+        bottom: 47.92%;   
+        }
+        #item3{
+            width: 267px;
+            height: 384px;
+            left: 707px;
+            top: 743px;
+        }
+        #preco3{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #notebookgameracertexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #notebookgameracerimg{
+            left: 8.73%;
+            right: 12.36%;
+            top: -2.08%;
+            bottom: 50%;
+        }
+        #item4{
+            width: 267px;
+            height: 384px;
+            left: 1018px;
+            top: 743px;
+        }
+        #preco4{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #nitendotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #nitendoimg{
+            left: 12.73%;
+            right: 12.36%;
+            top: 1.56%;
+            bottom: 46.35%;
+        }
+        #pcgamersmontados{
+            width: 800px;
+            height: 200px;
+            left: 300px;
+            top: 1721px;
+        }
+        #item5{
+            width: 267px;
+            height: 384px;
+            left: 79px;
+            top: 1224px;
+        }
+        #preco5{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #ps5texto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #ps5img{
+            width: 172px;
+            height: 176px;
+        }
+        #item7{
+            width: 267px;
+            height: 384px;
+            left: 707px;
+            top: 1224px;
+        }
+        #headsettexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco7{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #headsetimg{
+            width: 200px;
+            height: 200px;
+        }
+        #item8{
+            width: 267px;
+            height: 384px;
+            left: 1018px;
+            top: 1224px;
+        }
+        #tecladotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco8{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #tecladoimg{
+            left: 9.73%;
+            right: 12.36%;
+            top: -2.34%;
+            bottom: 50.26%;
+        }
+        #item6{
+        width: 267px;
+        height: 384px;
+        left: 393px;
+        top: 1224px;
+        }
+        #mousetexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco6{
+            width: 140px;
+            height: 29px;
+            left: 75px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #mouseimg{
+            width: 171px;
+            height: 177px;
+        }
+        #ofertas{
+            width: 167px;
+            height: 45px;
+            left: 600px;
+            top: 653px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #confiraofertas {
+            width: 504px;
+            height: 46px;
+            left: 353px;
+            top: 1644px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #botaoclique{
+        width: 230px;
+        height: 45px;
+        left: 786px;
+        top: 1645px;
+        }
+        #cliqueaqui{
+        width: 136px;
+        height: 36px;
+        left: 833px;
+        top: 1650px;   
+        font-size: 24px;
+        line-height: 30px;
+        }
+        footer{
+            width: 1366px;
+            height: 340px;
+            left: 0px;
+            top: 2990px;        
+        }
+        #contaepedido{
+            width: 135px;
+            height: 64px;
+            left: 107px;
+            top: 56px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        #chat{
+            width: 63px;
+            height: 23px;
+            left: 107px;
+            top: 159px; 
+            font-size: 14px;
+            line-height: 24px;    
+        }
+        #chatimg{
+        width: 207px;
+        height: 46px;
+        left: 100px;
+        top: 181px; 
+        }
+        #departamentosop{
+            width: 227px;
+            height: 77px;
+            left: 422px;
+            top: 56px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        #institucional{
+            width: 215px;
+            height: 96px;
+            left: 422px;
+            top: 157px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        #pagamentoimg{
+        width: 332px;
+        height: 54px;
+        left: 716px;
+        top: 84px;
+        }
+        #formasdepagar{
+            width: 228px;
+            height: 28px;
+            left: 747px;
+            top: 56px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        #copy{
+            width: 144px;
+            height: 27px;
+            left: 611px;
+            top: 287px;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        #email{
+            width: 233px;
+            height: 48px;
+            left: 742px;
+            top: 161px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        #sigaeletro{
+        width: 169px;
+        height: 27px;
+        left: 1143px;
+        top: 37px;
+        font-size: 14px;
+        line-height: 24px;
+        }
+        #twiter{
+        width: 39px;
+        height: 37.3px;
+        left: 1180px;
+        top: 153px;
+        background: url(imagens/twiter-menor.png);
+        }
+        #whatszap{
+        width: 39px;
+        height: 41px;
+        left: 1182px;
+        top: 241px;
+        background: url(imagens/whatszap-menor.png);
+        }
+        #facebook{
+            width: 39px;
+            height: 37px;
+            left: 1182px;
+            top: 65px;
+            background: url(imagens/facebook-menor.png);
+        }
+        #youtube{
+            width: 39px;
+            height: 39px;
+            left: 1182px;
+            top: 197px;
+            background: url(imagens/youtube-menor.png)
+        }
+        #instagram{
+            width: 39px;
+            height: 38.37px;
+            left: 1182px;
+            top: 109px;
+            background: url(imagens/instagram-menor.png);
+        }
+        #emailimg{
+        width: 28px;
+        height: 22px;
+        left: 960px;
+        top: 183px; 
+        background: url(imagens/email-menor.png);
+        }
+}
+@media(width: 768px) {
+        body{
+         margin: 0;
+         padding: 0;
+         max-width: 100%;
+         overflow-x: hidden;
+        }
+        .navbar{
+            width: 768px;
+            height: 112px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 44px;
+            top: 40px; 
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 130px;
+            height: 105px;
+            left: 124px;
+            top: 7px;
+        }
+        #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 663px;
+            top: 29px;
+        }
+        #meio{
+            width: 768px;
+            height: 623px;
+            left: 0px;
+            top: 112px;
+        }
+        #quartogamer{
+            width: 768px;
+            height: 319px;
+            left: 0px;
+            top: 0px;
+        }
+        #tudoparagamers{
+            width: 316px;
+            height: 45px;
+            left: 460px;
+            top: 129px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+        #eletronicsstore{
+            width: 248px;
+            height: 38px;
+            left: 537px;
+            top: 91px;
+            font-size: 28px;
+            line-height: 38px;
+         }
+         #departamentos{
+            width: 304px;
+            height: 45px;
+            left: 226px;
+            top: 348px;
+            font-size: 36px;
+            line-height: 35px;
+         }
+         #hardwarebox{
+            width: 190px;
+            height: 160px;
+            left: 36px;
+            top: 440px;   
+         }
+         #hardwareimg{
+            width: 100px;
+            height: 62.86px;
+            left: 45px;
+            top: 32px;
+         }
+         #hardwarepalavra{
+            width: 122px;
+            height: 31px;
+            left: 38px;
+            top: 108px;
+            font-size: 25px;
+         }
+         #computadoresbox{
+            width: 190px;
+            height: 160px;
+            left: 283px;
+            top: 440px;
+         }
+         #computadoresimg{
+            width: 100px;
+            height: 62.86px;
+            left: 45px;
+            top: 30px;            
+         }
+         #computadorespalavra{
+            width: 171px;
+            height: 40px;
+            left: 10px;
+            top: 106px;
+            font-size: 25px;
+         }
+         #perifericosbox{
+            width: 190px;
+            height: 160px;
+            left: 530px;
+            top: 440px;
+         }
+         #espacogamerimg{
+            width: 100px;
+            height: 62.86px;
+            left: 18px;
+            top: 34px;
+         }
+         #perifericosimg{
+            width: 100px;
+            height: 62.86px;
+            left: 74px;
+            top: 34px;
+         }
+         #perifericospalavra{
+            width: 129px;
+            height: 31px;
+            left: 31px;
+            top: 108px;
+             font-size: 25px;
+         }
+         #meiobaixo{
+            width: 768px;
+            height: 1752px;
+            left: 0px;
+            top: 735px;
+         }
+         #cadeirasgamers{
+            width: 540px;
+            height: 135px;
+            left: 117px;
+            top: 40px;  
+         }
+         #notebooks{
+            width: 260px;
+            height: 220.11px;
+            left: 257px;
+            top: 228px;
+         }
+         #item1{
+            width: 267px;
+            height: 384px;
+            left: 68px;
+            top: 592px; 
+         }
+         #comprar{
+            left: 72px;
+            top: 333px;
+         }
+         #placa3060texto{
+             width: 250px;
+             height: 54px;
+             left: 9px;
+             top: 206px;
+             font-size: 14px;
+             line-height: 18px;
+         }
+         #preco1{
+            width: 140px;
+            height: 29px;
+            left: 60px;
+            top: 275px;
+            font-size: 24px;
+            line-height: 29px;
+         }
+         #item2{
+            width: 267px;
+            height: 384px;
+            left: 424px;
+            top: 592px;
+         }
+         #monitortexto{
+             left: 3%;
+             right: 3.37%;
+             top: 52.08%;
+             bottom: 33.85%;
+             font-size: 14px;
+             line-height: 18px;  
+         }
+         #preco2{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 275px;
+            font-size: 24px;
+            line-height: 29px;
+         }
+         #monitorhuskyimg{
+             left: 10%;
+             right: 12%;
+             top: -2%;
+             bottom: 47.92%;   
+         }
+         #item5{
+            width: 267px;
+            height: 384px;
+            left: 68px;
+            top: 1047px;
+         }
+         #preco5{
+            width: 140px;
+            height: 29px;
+            left: 65px;
+            top: 275px;
+            font-size: 24px;
+            line-height: 29px;
+         }
+         #ps5texto{
+            left: 3.37%;
+            right: 3%;
+            top: 50.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+            line-height: 18px;
+         }
+         #ps5img{
+             width: 172px;
+             height: 176px;
+         }
+         #item6{
+            width: 267px;
+            height: 384px;
+            left: 424px;
+            top: 1047px;
+         }
+         #mousetexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+            line-height: 18px;
+         }
+         #preco6{
+            width: 140px;
+            height: 29px;
+            left: 72px;
+            top: 275px;
+            font-size: 24px;
+            line-height: 29px;
+         }
+         #mouseimg{
+             width: 171px;
+             height: 177px;
+         }
+         #ofertas{
+            width: 167px;
+            height: 45px;
+            left: 302px;
+            top: 497px;
+            font-size: 36px;
+            line-height: 45px;
+         }
+         #confiraofertas {
+            width: 456px;
+            height: 45px;
+            left: 70px;
+            top: 1465px;
+            font-size: 36px;
+            line-height: 45px; 
+         }
+         #botaoclique{
+            width: 140px;
+            height: 45px;
+            left: 503px;
+            top: 1465px;
+         }
+         #cliqueaqui{
+            width: 112px;
+            height: 25px;
+            left: 517px;
+            top: 1475px;
+            font-size: 20px;
+            line-height: 25px;
+         }
+         #pcgamersmontados{
+            width: 540px;
+            height: 135px;
+            left: 103px;
+            top: 1554px;
+         }
+         footer{
+            width: 768px;
+            height: 410px;
+            left: 0px;
+            top: 2487px;    
+         }
+         #contaepedido{
+             width: 135px;
+             height: 64px;
+             left: 64px;
+             top: 30px;
+             font-family: "Inter", sans-serif;
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #chat{
+             width: 63px;
+             height: 23px;
+             left: 67px;
+             top: 109px; 
+             font-family: "Inter", sans-serif;
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;    
+         }
+         #chatimg{
+             position: absolute;
+             width: 140px;
+             height: 25px;
+             left: 60px;
+             top: 131px; 
+         }
+         #departamentosop{
+             width: 227px;
+             height: 77px;
+             left: 331px;
+             top: 30px;
+             font-family: "Inter", sans-serif;
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #institucional{
+             width: 215px;
+             height: 96px;
+             left: 331px;
+             top: 139px;
+             font-family: "Inter", sans-serif;
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #pagamentoimg{
+             position: absolute;
+             width: 232px;
+             height: 34px;
+             left: 50px;
+             top: 190px;
+         }
+         #formasdepagar{
+             width: 228px;
+             height: 28px;
+             left: 68px;
+             top: 170px;
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #email{
+             width: 323px;
+             height: 75px;
+             left: 65px;
+             top: 237px;
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #emailimg{
+             width: 28px;
+             height: 22px;
+             left: 280px;
+             top: 258px; 
+             background: url(imagens/email-menor.png);
+         }
+         #sigaeletro{
+             position: absolute;
+             width: 169px;
+             height: 27px;
+             left: 590px;
+             top: 30px;
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 14px;
+             line-height: 24px;
+         }
+         #facebook{
+             width: 35px;
+             height: 37px;
+             left: 620px;
+             top: 59px;
+             background: url(imagens/facebook-menor.png);
+         }
+         #instagram{
+             width: 35px;
+             height: 38.37px;
+             left: 620px;
+             top: 95px;
+             background: url(imagens/instagram-menor.png);
+         }
+         #twiter{
+             position: absolute;
+             width: 35px;
+             height: 37.3px;
+             left: 620px;
+             top: 135px;
+             background: url(imagens/twiter-menor.png);
+         }
+         #youtube{
+             position: absolute;
+             width: 35px;
+             height: 39px;
+             left: 620px;
+             top: 175px;
+             background: url(imagens/youtube-menor.png)
+         }
+         #whatszap{
+             position: absolute;
+             width: 35px;
+             height: 41px;
+             left: 620px;
+             top: 215px;
+             background: url(imagens/whatszap-menor.png);
+         
+         }
+         #copy{
+            width: 145px;
+            height: 27px;
+            left: 303px;
+            top: 333px;
+             
+             font-family: 'Inter';
+             font-style: normal;
+             font-weight: 700;
+             font-size: 16px;
+             line-height: 19px;
+         }
+     
+}
+@media(width: 320px){ 
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    .navbar{
+        width: 320px;
+        height: 39px;
+    }
+    .navbar-burger {  /*mexe no menu*/
+        left: -12px;
+        top: -9px;
+    }
+    .navbar-burger > img {
+        width: 22px;
+        height: 16.19px;
+    }
+    .navbar-menu > a > button.active {
+        font-size: 20px;
+    }
+    summary {
+        font-size: 20px;
+      }
+      .navbar-menu {
+        width: 200px;
+      } 
+    #logo{
+    width: 38px;
+    height: 38px;
+    left: 42px;
+    top: 1px;
+    }        
+    #carrinho{
+    width: 21px;
+    height: 19px;
+    left: 286px;
+    top: 10px;
+    }
+    #meio{
+    width: 320px;
+    height: 203px;
+    left: 0px;
+    top: 39px;
+    }
+    #quartogamer{
+        width: 320px;
+        height: 100px;
+        left: 0px;
+        top: 0px;  
+    }
+    #tudoparagamers{
+        left: 212px;
+        top: 36px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #eletronicsstore{
+    left: 239px;
+    top: 23px;
+    font-size: 10px;
+    line-height: 12px;    
+    }
+    #hardwarebox{
+        width: 75px;
+        height: 62px;
+        left: 21px;
+        top: 127px;
+    }
+    #hardwareimg{
+        width: 36px;
+        height: 23px;
+        left: 20px;
+        top: 12px;
+    }
+    #hardwarepalavra{
+        width: 49px;
+        height: 13px;
+        left: 15px;
+        top: 39px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #perifericosbox{
+        width: 75px;
+        height: 62px;
+        left: 229px;
+        top: 127px;
+    }
+    #espacogamerimg{
+        width: 22px;
+        height: 21px;
+        left: 21px;
+        top: 12px; 
+    }
+    #perifericosimg{
+        width: 21px;
+        height: 22px;
+        left: 35px;
+        top: 12px;
+    }
+    #perifericospalavra{
+        width: 50px;
+        height: 14px;
+        left: 13px;
+        top: 40px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #computadoresbox{
+        width: 75px;
+        height: 62px;
+        left: 127px;
+        top: 127px;
+    }
+    #computadoresimg{
+        width: 45px;
+        height: 28px;
+        left: 15px;
+        top: 9px;
+    }
+    #computadorespalavra{
+        width: 71px;
+        height: 13px;
+        left: 2px;
+        top: 39px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #departamentos{
+        width: 101px;
+        height: 15px;
+        left: 109px;
+        top: 104px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #meiobaixo{
+        width: 320px;
+        height: 382px;
+        left: 0px;
+        top: 242px;
+    }
+    #cadeirasgamers{
+        width: 200px;
+        height: 49.02px;
+        left: 60px;
+        top: 3px;
+    }
+    #notebooks{
+        width: 100px;
+        height: 84.66px;
+        left: 110px;
+        top: 67px; 
+    }
+    #item1{
+        width: 58px;
+        height: 83px;
+        left: 91px;
+        top: 186px;
+        border-radius: 10px; 
+    }
+    #botaocomprar{
+        left: 6.9%;
+        right: 6.9%;
+        top: 80.72%;
+        bottom: 3.61%;
+        border: 1px;
+    }
+    #comprar{
+        left: 16.24%;
+        right: 17.24%;
+        top: 81.93%;
+        bottom: 3.61%;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    #placa3060texto{
+        width: 54px;
+        height: 12px;
+        left: 2px;
+        top: 31px;
+        font-size: 4px;
+        line-height: 5px;
+    }
+    #preco1{
+        left: 11.79%;
+        right: 15.52%;
+        top: 63.86%;
+        bottom: 25.3%;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    #placartx3060{
+        width: 31px;
+        height: 29px;
+        left: 15px;
+        top: 1px;
+    }
+    #item3{
+        width: 58px;
+        height: 83px;
+        left: 172px;
+        top: 186px;
+        border-radius: 10px;
+    }
+    #preco3{
+        left: 12.07%;
+        right: 15.52%;
+        top: 65.06%;
+        bottom: 22.89%;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    #notebookgameracertexto{
+        left: 3.45%;
+        right: 3.45%;
+        top: 36.96%;
+        bottom: 41.08%;;
+        font-size: 4px;
+        line-height: 5px;
+    }
+    #notebookgameracerimg{
+        width: 32px;
+        height: 30px;
+        left: 13px;
+        top: 1px;
+    }
+    #pcgamersmontados{
+        width: 200px;
+        height: 50px;
+        left: 0px;
+        top: 310px;
+    }
+    #item4{
+        width: 58px;
+        height: 83px;
+        left: 253px;
+        top: 186px;
+        border-radius: 10px;
+    }
+    #preco4{
+        left: 13.79%;
+        right: 15.52%;
+        top: 65.06%;
+        bottom: 24.1%;
+        font-size: 8px;
+        line-height: 10px;
+        
+    }
+    #nitendotexto{
+        left: 5.17%;
+        right: 6.9%;
+        top: 44.58%;
+        bottom: 46.99%;
+        font-size: 4px;
+        line-height: 5px;
+    }
+    #nitendoimg{
+        width: 30px;
+        height: 29px;
+        left: 13px;
+        top: 2px;
+    }
+    #pcgamersmontados{
+        width: 200px;
+        height: 50px;
+        left: 60px;
+        top: 310px;
+    }
+    #item2{
+        width: 340px;
+        height: 300px;
+        left: 500px;
+        top: 0px;
+    }
+    #item5{
+        width: 340px;
+        height: 300px;
+        left: 500px;
+        top: 0px;
+    }
+    #item7{
+        width: 340px;
+        height: 300px;
+        left: 500px;
+        top: 0px;
+    }
+    #item8{
+        width: 340px;
+        height: 300px;
+        left: 500px;
+        top: 0px;
+    }
+    #item6{
+        width: 58px;
+        height: 83px;
+        left: 10px;
+        top: 186px;
+        border-radius: 10px; 
+    }
+    #mousetexto{
+        left: 5.17%;
+        right: 5.17%;
+        top: 40.96%;
+        bottom: 42.17%;
+        font-size: 4px;
+        line-height: 5px;
+    }
+    #preco6{
+        left: 19.69%;
+        right: 22.41%;
+        top: 62.65%;
+        bottom: 24.1%;
+        font-size: 8px;
+        line-height: 10px;      
+    }
+    #mouseimg{
+        width: 24px;
+        height: 26px;
+        left: 17px;
+    }
+    #ofertas{
+        width: 56px;
+        height: 15px;
+        left: 132px;
+        top: 162px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #confiraofertas {
+        width: 120px;
+        height: 12px;
+        left: 70px;
+        top: 287px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    #botaoclique{
+        width: 50px;
+        height: 13px;
+        left: 192px;
+        top: 287px;
+        border: 1px ;
+        border-radius: 10px;
+    }
+    #cliqueaqui{
+        width: 44px;
+        height: 12px;
+        left: 195px;
+        top: 288px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    footer{
+        width: 320px;
+        height: 107px;
+        left: 0px;
+        top: 624px;    
+    }
+    #contaepedido{
+        width: 37px;
+        height: 19px;
+        left: 26px;
+        top: 20px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #chat{
+        width: 14px;
+        height: 7px;
+        left: 28px;
+        top: 50px;
+        font-size: 5px;
+        line-height: 6px;  
+    }
+    #chatimg{
+        width: 46px;
+        height: 9px;
+        left: 24px;
+        top: 57px;
+    }
+    #departamentosop{
+        width: 42px;
+        height: 26px;
+        left: 92px;
+        top: 19px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #institucional{
+        width: 76px;
+        height: 31px;
+        left: 92px;
+        top: 50px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #pagamentoimg{
+        width: 76px;
+        height: 12.36px;
+        left: 173px;
+        top: 27px;
+    }
+    #formasdepagar{
+        width: 57px;
+        height: 6px;
+        left: 179px;
+        top: 21px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #copy{
+        width: 54px;
+        height: 9px;
+        left: 136px;
+        top: 92px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #email{
+        width: 81px;
+        height: 13px;
+        left: 179px;
+        top: 50px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #sigaeletro{
+        width: 43px;
+        height: 8px;
+        left: 273px;
+        top: 20px;
+        font-size: 5px;
+        line-height: 6px;
+    }
+    #twiter{
+        width: 9px;
+        height: 8.61px;
+        left: 290px;
+        top: 51px;
+    background: url(imagens/twiter-menor-menor.png);
+    }
+    #whatszap{
+        width: 10px;
+        height: 10.51px;
+        left: 290px;
+        top: 74px;
+    background: url(imagens/whatszap-menor-menor.png);
+    }
+    #facebook{
+        width: 10px;
+        height: 9.49px;
+        left: 290px;
+        top: 30px;        
+        background: url(imagens/facebook-menor-menor.png);
+    }
+    #youtube{
+        width: 10px;
+        height: 10px;
+        left: 290px;
+        top: 62px;
+        background: url(imagens/youtube-menor-menor.png)
+    }
+    #instagram{
+        width: 10px;
+        height: 9.84px;
+        left: 290px;
+        top: 40px;
+        background: url(imagens/instagram-menor-menor.png);
+    }
+    #emailimg{
+    width: 9px;
+    height: 5.836px;
+    left: 255px;
+    top: 55px;
+    background: url(imagens/email-menor-menor.png);
+    }
+}
+@media(width: 375px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 375px;
+            height: 39px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            left: -12px;
+            top: -9px;
+        }
+        .navbar-burger > img {
+            width: 22px;
+            height: 16.19px;
+        }
+        .navbar-menu > a > button.active {
+            font-size: 20px;
+        }
+        summary {
+            font-size: 20px;
+          }
+          .navbar-menu {
+            width: 200px;
+          } 
+        #logo{
+            width: 40px;
+            height: 37px;
+            left: 41px;
+            top: 1px;
+        }        
+        #carrinho{
+        width: 21px;
+        height: 19px;
+        left: 344px;
+        top: 10px;;
+        }
+        #meio{
+            width: 375px;
+            height: 203px;
+            left: 0px;
+            top: 39px;
+        }
+        #quartogamer{
+            width: 375px;
+            height: 111px;
+            left: 0px;
+            top: 0px;  
+        }
+        #tudoparagamers{
+            width: 105px;
+            height: 13px;
+            left: 263px;
+            top: 52px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #eletronicsstore{
+            width: 78px;
+            height: 13px;
+            left: 290px;
+            top: 39px;
+        font-size: 10px;
+        line-height: 12px;    
+        }
+        #hardwarebox{
+            width: 75px;
+            height: 62px;
+            left: 35px;
+            top: 135px;
+        }
+        #hardwareimg{
+            width: 36px;
+            height: 23px;
+            left: 20px;
+            top: 12px;
+        }
+        #hardwarepalavra{
+            width: 49px;
+            height: 13px;
+            left: 15px;
+            top: 39px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #perifericosbox{
+            width: 75px;
+            height: 62px;
+            left: 267px;
+            top: 135px;
+        }
+        #espacogamerimg{
+            width: 22px;
+            height: 21px;
+            left: 21px;
+            top: 12px; 
+        }
+        #perifericosimg{
+            width: 21px;
+            height: 22px;
+            left: 35px;
+            top: 12px;
+        }
+        #perifericospalavra{
+            width: 50px;
+            height: 14px;
+            left: 13px;
+            top: 40px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #computadoresbox{
+            width: 75px;
+            height: 62px;
+            left: 151px;
+            top: 135px;
+        }
+        #computadoresimg{
+            width: 45px;
+            height: 28px;
+            left: 15px;
+            top: 9px;
+        }
+        #computadorespalavra{
+            width: 71px;
+            height: 13px;
+            left: 2px;
+            top: 39px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #departamentos{
+            width: 101px;
+            height: 15px;
+            left: 137px;
+            top: 116px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        #meiobaixo{
+            width: 375px;
+            height: 382px;
+            left: 0px;
+            top: 242px;
+        }
+        #cadeirasgamers{
+            width: 200px;
+            height: 49.02px;
+            left: 88px;
+            top: 5px;
+        }
+        #notebooks{
+            width: 100px;
+            height: 84.66px;
+            left: 138px;
+            top: 63px;
+        }
+        #item1{
+            width: 58px;
+            height: 83px;
+            left: 118px;
+            top: 185px;
+            border-radius: 10px; 
+        }
+        #botaocomprar{
+            left: 6.9%;
+            right: 6.9%;
+            top: 80.72%;
+            bottom: 3.61%;
+            border: 1px;
+        }
+        #comprar{
+            left: 16.24%;
+            right: 17.24%;
+            top: 81.93%;
+            bottom: 3.61%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #placa3060texto{
+            width: 54px;
+            height: 12px;
+            left: 2px;
+            top: 31px;
+            font-size: 4px;
+            line-height: 5px;
+        }
+        #preco1{
+            left: 11.79%;
+            right: 15.52%;
+            top: 63.86%;
+            bottom: 25.3%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #placartx3060{
+            width: 31px;
+            height: 29px;
+            left: 15px;
+            top: 1px;
+        }
+        #item3{
+            width: 58px;
+            height: 83px;
+            left: 206px;
+            top: 186px;
+            border-radius: 10px;
+        }
+        #preco3{
+            left: 12.07%;
+            right: 15.52%;
+            top: 65.06%;
+            bottom: 22.89%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #notebookgameracertexto{
+            left: 3.45%;
+            right: 3.45%;
+            top: 36.96%;
+            bottom: 41.08%;;
+            font-size: 4px;
+            line-height: 5px;
+        }
+        #notebookgameracerimg{
+            width: 32px;
+            height: 30px;
+            left: 13px;
+            top: 1px;
+        }
+        #pcgamersmontados{
+            width: 200px;
+            height: 50px;
+            left: 0px;
+            top: 310px;
+        }
+        #item4{
+            width: 58px;
+            height: 83px;
+            left: 292px;
+            top: 186px;
+            border-radius: 10px;
+        }
+        #preco4{
+            left: 13.79%;
+            right: 15.52%;
+            top: 65.06%;
+            bottom: 24.1%;
+            font-size: 8px;
+            line-height: 10px;
+            
+        }
+        #nitendotexto{
+            left: 5.17%;
+            right: 6.9%;
+            top: 44.58%;
+            bottom: 46.99%;
+            font-size: 4px;
+            line-height: 5px;
+        }
+        #nitendoimg{
+            width: 30px;
+            height: 29px;
+            left: 13px;
+            top: 2px;
+        }
+        #pcgamersmontados{
+            width: 200px;
+            height: 50px;
+            left: 88px;
+            top: 313px;
+        }
+        #item2{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item5{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item7{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item8{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item6{
+            width: 58px;
+            height: 83px;
+            left: 30px;
+            top: 186px;
+            border-radius: 10px; 
+        }
+        #mousetexto{
+            left: 5.17%;
+            right: 5.17%;
+            top: 40.96%;
+            bottom: 42.17%;
+            font-size: 4px;
+            line-height: 5px;
+        }
+        #preco6{
+            left: 19.69%;
+            right: 22.41%;
+            top: 62.65%;
+            bottom: 24.1%;
+            font-size: 8px;
+            line-height: 10px;      
+        }
+        #mouseimg{
+            width: 24px;
+            height: 26px;
+            left: 17px;
+        }
+        #ofertas{
+            width: 56px;
+            height: 15px;
+            left: 161px;
+            top: 157px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        #confiraofertas {
+            width: 145px;
+            height: 15px;
+            left: 92px;
+            top: 287px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        #botaoclique{
+            width: 50px;
+            height: 13px;
+            left: 237px;
+            top: 288px;
+            border: 1px ;
+            border-radius: 10px;
+        }
+        #cliqueaqui{
+            width: 44px;
+            height: 12px;
+            left: 240px;
+            top: 289px;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        footer{
+            width: 375px;
+            height: 107px;
+            left: 0px;
+            top: 624px;    
+        }
+        #contaepedido{
+            width: 37px;
+            height: 19px;
+            left: 26px;
+            top: 20px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+        #chat{
+            width: 14px;
+            height: 7px;
+            left: 28px;
+            top: 50px;
+            font-size: 5px;
+            line-height: 6px;  
+        }
+        #chatimg{
+            width: 46px;
+            height: 9px;
+            left: 24px;
+            top: 57px;
+        }
+        #departamentosop{
+            width: 42px;
+            height: 26px;
+            left: 94px;
+            top: 20px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+        #institucional{
+            width: 76px;
+            height: 31px;
+            left: 94px;
+            top: 50px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+        #pagamentoimg{
+            width: 76px;
+            height: 12.36px;
+            left: 179px;
+            top: 27px;
+        }
+        #formasdepagar{
+            width: 57px;
+            height: 6px;
+            left: 188px;
+            top: 20px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+#copy{
+width: 54px;
+height: 9px;
+left: 160px;
+top: 89px;
+font-size: 6px;
+ line-height: 7px;
+}
+        #email{
+            width: 81px;
+            height: 13px;
+            left: 187px;
+            top: 50px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+        #sigaeletro{
+            width: 43px;
+            height: 8px;
+            left: 314px;
+            top: 20px;
+            font-size: 5px;
+            line-height: 6px;
+        }
+        #twiter{
+            width: 9px;
+            height: 8.61px;
+            left: 331px;
+            top: 50px;
+        background: url(imagens/twiter-menor-menor.png);
+        }
+        #whatszap{
+            width: 10px;
+            height: 10.51px;
+            left: 331px;
+            top: 70px;
+        background: url(imagens/whatszap-menor-menor.png);
+        }
+        #facebook{
+            width: 10px;
+            height: 9.49px;
+            left: 331px;
+            top: 28px;      
+            background: url(imagens/facebook-menor-menor.png);
+        }
+        #youtube{
+            width: 10px;
+            height: 10px;
+            left: 331px;
+            top: 60px;
+            background: url(imagens/youtube-menor-menor.png)
+        }
+        #instagram{
+            width: 10px;
+            height: 9.84px;
+            left: 331px;
+            top: 39px;
+            background: url(imagens/instagram-menor-menor.png);
+        }
+        #emailimg{
+        width: 9px;
+        height: 5.836px;
+        left: 265px;
+        top: 55px;
+        background: url(imagens/email-menor-menor.png);
+        }
+}
+@media(width: 425px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 425px;
+            height: 39px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            left: -12px;
+            top: -9px;
+        }
+        .navbar-burger > img {
+            width: 22px;
+            height: 16.19px;
+        }
+        .navbar-menu > a > button.active {
+            font-size: 20px;
+        }
+        summary {
+            font-size: 20px;
+          }
+          .navbar-menu {
+            width: 200px;
+          } 
+        #logo{
+            width: 40px;
+            height: 37px;
+            left: 45px;
+            top: 1px;            
+        }        
+        #carrinho{
+            width: 21px;
+            height: 19px;
+            left: 397px;
+            top: 10px;
+        }
+        #meio{
+            width: 425px;
+            height: 211px;
+            left: 0px;
+            top: 39px;
+        }
+        #quartogamer{
+            width: 425px;
+            height: 118px;
+            left: 0px;
+            top: 0px;             
+        }
+        #tudoparagamers{
+            width: 125px;
+            height: 13px;
+            left: 297px;
+            top: 49px;            
+            font-size: 12px;
+            line-height: 14px;
+        }
+        #eletronicsstore{
+            width: 91px;
+            height: 13px;
+            left: 329px;
+            top: 36px;
+        font-size: 12px;
+        line-height: 14px;    
+        }
+        #hardwarebox{
+            width: 75px;
+            height: 62px;
+            left: 37px;
+            top: 144px;
+        }
+        #hardwareimg{
+            width: 36px;
+            height: 23px;
+            left: 20px;
+            top: 12px;
+        }
+        #hardwarepalavra{
+            width: 49px;
+            height: 13px;
+            left: 13px;
+            top: 39px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #perifericosbox{
+            width: 75px;
+            height: 62px;
+            left: 315px;
+            top: 144px;
+        }
+        #espacogamerimg{
+            width: 30px; 
+            height: 22px; 
+            left: 13px; 
+            top: 12px;
+        }
+        #perifericosimg{
+        width: 28px; 
+        height: 22px; 
+        left: 35px; 
+        top: 12px;         
+        }
+        #perifericospalavra{
+            width: 50px;
+            height: 14px;
+            left: 13px;
+            top: 40px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #computadoresbox{
+            width: 75px;
+            height: 62px;
+            left: 176px;
+            top: 144px;
+        }
+        #computadoresimg{
+            width: 45px;
+            height: 28px;
+            left: 15px;
+            top: 9px;
+        }
+        #computadorespalavra{
+            width: 71px;
+            height: 13px;
+            left: 2px;
+            top: 41px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        #departamentos{
+            width: 101px;
+            height: 15px;
+            left: 166px;
+            top: 122px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        #meiobaixo{
+            width: 425px;
+            height: 397px;
+            left: 0px;
+            top: 250px;
+        }
+        #cadeirasgamers{
+            width: 200px;
+            height: 49.02px;
+            left: 113px;
+            top: 11px;
+        }
+        #notebooks{
+            width: 100px;
+            height: 84.66px;
+            left: 163px;
+            top: 69px;
+        }
+        #item1{
+            width: 69px;
+            height: 93px;
+            left: 128px;
+            top: 192px;
+            border-radius: 10px; 
+        }
+        #botaocomprar{
+            left: 6.9%;
+            right: 6.9%;
+            top: 80.72%;
+            bottom: 3.61%;
+            border: 1px;
+        }
+        #comprar{
+            left: 20.74%;
+            right: 23.19%;
+            top: 82.8%;
+            bottom: 3.23%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #placa3060texto{
+            width: 59px;
+            height: 12px;
+            left: 2px;
+            top: 37px;
+            font-size: 5px;
+            line-height: 5px;
+        }
+        #preco1{
+            left: 20.29%;
+            right: 9.02%;
+            top: 66.67%;
+            bottom: 22.49%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #placartx3060{
+            width: 36.879px;
+            height: 32.494px;
+            left: 15px;
+            top: 1px;
+        }
+        #item3{
+            width: 69px;
+            height: 93px;
+            left: 224px;
+            top: 192px;
+            border-radius: 10px;
+        }
+        #preco3{
+            left: 14.49%;
+            right: 13.09%;
+            top: 66.67%;
+            bottom: 21.29%;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        #notebookgameracertexto{
+            left: 4.35%;
+            right: 4.35%;
+            top: 37.86%;
+            bottom: 29.03%;
+            font-size: 5px;
+            line-height: 5px;
+        }
+        #notebookgameracerimg{
+            width: 42.864px;
+            height: 37.848px;
+            left: 13px;
+        }
+        #pcgamersmontados{
+            width: 200px;
+            height: 50px;
+            left: 0px;
+            top: 310px;
+        }
+        #item4{
+            width: 69px;
+            height: 93px;
+            left: 321px;
+            top: 192px;
+            border-radius: 10px;
+        }
+        #preco4{
+            left: 15.94%;
+            right: 13.37%;
+            top: 65.59%;
+            bottom: 23.57%;
+            font-size: 8px;
+            line-height: 10px;           
+        }
+        #nitendotexto{
+            left: 10.14%;
+            right: 8.7%;
+            top: 42.16%;
+            bottom: 39.78%;
+            font-size: 5px;
+            line-height: 5px;
+        }
+        #nitendoimg{
+            width: 42.864px;
+            height: 32.703px;
+            left: 13px;
+            top: 2px;
+        }
+        #pcgamersmontados{
+            width: 250px;
+            height: 62.5px;
+            left: 88px;
+            top: 325px;            
+        }
+        #item2{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item5{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item7{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item8{
+            width: 340px;
+            height: 300px;
+            left: 500px;
+            top: 0px;
+        }
+        #item6{
+            width: 69px;
+            height: 93px;
+            left: 35px;
+            top: 192px;
+            border-radius: 10px; 
+        }
+        #mousetexto{
+            left: 4.35%;
+            right: 6%;
+            top: 41.94%;
+            bottom: 41.2%;
+            font-size: 5px;
+            line-height: 5px;
+        }
+        #preco6{
+            left: 23.09%;
+            right: 24.64%;
+            top: 65.59%;
+            bottom: 24.73%;
+            font-size: 8px;
+            line-height: 10px;      
+        }
+        #mouseimg{
+            width: 34px;
+            height: 31px;
+            left: 18px;
+        }
+        #ofertas{
+            width: 63px;
+            height: 15px;
+            left: 181px;
+            top: 164px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        #confiraofertas {
+            width: 168px;
+            height: 15px;
+            left: 100px;
+            top: 300px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        #botaoclique{
+            width: 50px;
+            height: 13px;
+            left: 271px;
+            top: 302px;            
+            border: 1px ;
+            border-radius: 10px;
+        }
+        #cliqueaqui{
+            width: 44px;
+            height: 12px;
+            left: 274px;
+            top: 303px;
+            font-size: 8px;
+            line-height: 10px;
+        }
+        footer{
+            width: 425px;
+            height: 107px;
+            left: 0px;
+            top: 650px;  
+        }
+        #contaepedido{
+            width: 44px;
+            height: 23px;
+            left: 21px;
+            top: 16px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        #chat{
+            width: 16px;
+            height: 7px;
+            left: 21px;
+            top: 51px;
+            font-size: 6px;
+            line-height: 7px; 
+        }
+        #chatimg{
+            width: 59px;
+            height: 13px;
+            left: 21px;
+            top: 60px;
+        }
+        #departamentosop{
+            width: 49px;
+            height: 30px;
+            left: 96px;
+            top: 16px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        #institucional{
+            width: 96px;
+            height: 37px;
+            left: 96px;
+            top: 51px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        #pagamentoimg{
+            width: 89px;
+            height: 16px;
+            left: 210px;
+            top: 23px;
+        }
+        #formasdepagar{
+            width: 69px;
+            height: 6px;
+            left: 214px;
+            top: 16px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+#copy{
+    width: 54px;
+    height: 9px;
+    left: 190px;
+    top: 91px;
+    font-size: 6px;
+    line-height: 7px;
+}
+        #email{
+            width: 95px;
+            height: 13px;
+            left: 214px;
+            top: 51px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        #sigaeletro{
+            width: 50px;
+            height: 8px;
+            left: 353px;
+            top: 16px;
+            font-size: 6px;
+            line-height: 7px;
+        }
+        #twiter{
+            width: 9px;
+            height: 8.61px;
+            left: 373px;
+            top: 44px;
+        background: url(imagens/twiter-menor-menor.png);
+        }
+        #whatszap{
+            width: 10px;
+            height: 10.51px;
+            left: 373px;
+            top: 67px;
+        background: url(imagens/whatszap-menor-menor.png);
+        }
+        #facebook{
+            width: 10px;
+            height: 9.49px;
+            left: 373px;
+            top: 24px;     
+            background: url(imagens/facebook-menor-menor.png);
+        }
+        #youtube{
+            width: 10px;
+            height: 10px;
+            left: 373px;
+            top: 55px;
+            background: url(imagens/youtube-menor-menor.png)
+        }
+        #instagram{
+            width: 10px;
+            height: 9.84px;
+            left: 373px;
+            top: 34px;
+            background: url(imagens/instagram-menor-menor.png);
+        }
+        #emailimg{
+        width: 9px;
+        height: 5.836px;
+        left: 308px;
+        top: 58px;
+        background: url(imagens/email-menor-menor.png);
+        }
+}
+@media(width: 1024px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 1024px;
+            height: 112px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 40px;
+            top: 36px; 
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 130px;
+            height: 105px;
+            left: 117px;
+            top: 3px;
+        }        
+        #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 929px;
+            top: 25px;
+        }
+        #meio{
+            width: 1024px;
+            height: 626px;
+            left: 0px;
+            top: 112px;            
+        }
+        #quartogamer{
+            width: 1024px;
+            height: 334px;
+            left: 0px;
+            top: 0px; 
+        }
+        #tudoparagamers{
+            width: 325px;
+            height: 45px;
+            left: 684px;
+            top: 144px;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        #eletronicsstore{
+        width: 248px;
+        height: 38px;
+        left: 765px;
+        top: 106px;     
+        font-size: 32px;
+        line-height: 38px;
+        }
+        #hardwarebox{
+            width: 204px;
+            height: 183px;
+            left: 91px;
+            top: 428px;            
+        }
+        #hardwareimg{
+            width: 100px;
+            height: 62.86px;
+            left: 52px;
+            top: 39px;
+        }
+        #hardwarepalavra{
+            width: 122px;
+            height: 31px;
+            left: 45px;
+            top: 120px;
+            font-size: 25px;
+            line-height: 31px;
+        }
+        #perifericosbox{
+            width: 204px;
+            height: 183px;
+            left: 729px;
+            top: 428px;            
+        }
+        #espacogamerimg{
+            width: 100px;
+            height: 62.86px;
+            left: 23px;
+            top: 34px; 
+        }
+        #perifericosimg{
+            width: 100px;
+            height: 62.86px;
+            left: 73px;
+            top: 34px;
+        }
+        #perifericospalavra{
+            width: 129px;
+            height: 31px;
+            left: 40px;
+            top: 120px;
+            font-size: 25px;
+            line-height: 31px;
+        }
+        #computadoresbox{
+            width: 204px;
+            height: 183px;
+            left: 410px;
+            top: 428px;
+        }
+        #computadoresimg{
+            width: 100px;
+            height: 62.86px;
+            left: 52px;
+            top: 29px;
+        }
+        #computadorespalavra{
+            width: 171px;
+            height: 40px;
+            left: 16px;
+            top: 120px;
+            font-size: 25px;
+            line-height: 31px;
+        }
+        #departamentos{
+            left: 360px;
+            top: 358px;
+            font-size: 36px;
+            line-height: 45px; 
+        }
+        #meiobaixo{
+            width: 1024px;
+            height: 1798px;
+            left: 0px;
+            top: 738px;
+        }
+        #cadeirasgamers{
+            width: 600px;
+            height: 150px;
+            left: 212px;
+            top: 28px;
+        }
+        #notebooks{
+            width: 300px;
+            height: 253.98px;
+            left: 362px;
+            top: 223px;
+        }
+        #item1{
+            width: 267px;
+            height: 384px;
+            left: 56px;
+            top: 592px;
+        }
+        #comprar{
+            left: 70px;
+            top: 333px;
+            font-size: 24px;
+        }
+        #placa3060texto{
+            width: 250px;
+            height: 54px;
+            left: 9px;
+            top: 206px;
+            font-size: 14px;
+        }
+        #preco1{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #item2{
+            width: 267px;
+            height: 384px;
+            left: 378px;
+            top: 592px;
+        }
+        #monitortexto{
+            left: 3%;
+            right: 3.37%;
+            top: 52.08%;
+            bottom: 33.85%;
+            font-size: 14px;
+        }
+        #preco2{
+            width: 140px;
+            height: 29px;
+            left: 66px;
+            top: 273px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        #monitorhuskyimg{
+        left: 10%;
+        right: 12%;
+        top: -2%;
+        bottom: 47.92%;   
+        }
+        #item3{
+            width: 267px;
+            height: 384px;
+            left: 1800px;
+            top: 743px;
+        }
+        #preco3{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #notebookgameracertexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #notebookgameracerimg{
+            left: 8.73%;
+            right: 12.36%;
+            top: -2.08%;
+            bottom: 50%;
+        }
+        #item4{
+            width: 267px;
+            height: 384px;
+            left: 700px;
+            top: 592px;
+        }
+        #preco4{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #nitendotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #nitendoimg{
+            left: 12.73%;
+            right: 12.36%;
+            top: 1.56%;
+            bottom: 46.35%;
+        }
+        #pcgamersmontados{
+            width: 600px;
+            height: 150px;
+            left: 212px;
+            top: 1574px;
+        }
+        #item5{
+            width: 267px;
+            height: 384px;
+            left: 56px;
+            top: 1047px;
+        }
+        #preco5{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #ps5texto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #ps5img{
+            width: 172px;
+            height: 176px;
+        }
+        #item7{
+            width: 267px;
+            height: 384px;
+            left: 1800px;
+            top: 1224px;
+        }
+        #headsettexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco7{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #headsetimg{
+            width: 200px;
+            height: 200px;
+        }
+        #item8{
+            width: 267px;
+            height: 384px;
+            left: 700px;
+            top: 1047px;
+        }
+        #tecladotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco8{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #tecladoimg{
+            left: 9.73%;
+            right: 12.36%;
+            top: -2.34%;
+            bottom: 50.26%;
+        }
+        #item6{
+            width: 267px;
+            height: 384px;
+            left: 378px;
+            top: 1047px;
+        }
+        #mousetexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco6{
+            width: 140px;
+            height: 29px;
+            left: 75px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #mouseimg{
+            width: 171px;
+            height: 177px;
+        }
+        #ofertas{
+            width: 167px;
+            height: 45px;
+            left: 428px;
+            top: 511px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #confiraofertas {
+            width: 456px;
+            height: 45px;
+            left: 190px;
+            top: 1490px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #botaoclique{
+            width: 176px;
+            height: 48px;
+            left: 626px;
+            top: 1489px;
+        }
+        #cliqueaqui{
+            width: 112px;
+            height: 25px;
+            left: 658px;
+            top: 1500px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        footer{
+            width: 1024px;
+            height: 375px;
+            left: 0px;
+            top: 2536px;     
+        }
+        #contaepedido{
+            width: 135px;
+            height: 64px;
+            left: 39px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #chat{
+            width: 63px;
+            height: 23px;
+            left: 39px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px; 
+        }
+        #chatimg{
+            width: 169px;
+            height: 38px;
+            left: 38px;
+            top: 182px;
+        }
+        #departamentosop{
+            width: 227px;
+            height: 77px;
+            left: 257px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #institucional{
+            width: 230px;
+            height: 96px;
+            left: 263px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px;            
+        }
+        #pagamentoimg{
+            width: 243px;
+            height: 44px;
+            left: 494px;
+            top: 76px;
+        }
+        #formasdepagar{
+            width: 228px;
+            height: 28px;
+            left: 509px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #copy{
+            width: 141px;
+            height: 27px;
+            left: 424px;
+            top: 325px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        #email{
+            width: 227px;
+            height: 40px;
+            left: 512px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #sigaeletro{
+            width: 169px;
+            height: 27px;
+            left: 820px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #twiter{
+            width: 39px;
+            height: 37.3px;
+            left: 885px;
+            top: 160px;
+        background: url(imagens/twiter-menor.png);
+        }
+        #whatszap{
+            width: 39px;
+            height: 41px;
+            left: 885px;
+            top: 255px;
+        background: url(imagens/whatszap-menor.png);
+        }
+        #facebook{
+            width: 39px;
+            height: 37px;
+            left: 885px;
+            top: 84px;
+            background: url(imagens/facebook-menor.png);
+        }
+        #youtube{
+            width: 39px;
+            height: 39px;
+            left: 885px;
+            top: 212px;
+            background: url(imagens/youtube-menor.png)
+        }
+        #instagram{
+            width: 39px;
+            height: 38.37px;
+            left: 885px;
+            top: 121px;
+            background: url(imagens/instagram-menor.png);
+        }
+        #emailimg{
+        width: 28px;
+        height: 22px;
+        left: 820px;
+        top: 185px; 
+        background: url(imagens/email-menor.png);
+        }
+}
+@media(width: 1440px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 1440px;
+            height: 120px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 54px;
+            top: 37px;  
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 144px;
+            height: 120px;
+            left: 135px;
+            top: 0px;
+        }        
+        #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 1351px;
+            top: 29px;            
+        }
+        #meio{
+            width: 1440px;
+            height: 910px;
+            left: 0px;
+            top: 120px;
+        }
+        #quartogamer{
+            width: 1440px;
+            height: 460px;
+            left: 0px;
+            top: 0px;  
+        }
+        #tudoparagamers{
+            width: 372px;
+            height: 45px;
+            left: 1059px;
+            top: 207px;
+            font-size: 36px;
+            line-height: 43px;
+        }
+        #eletronicsstore{
+            width: 281px;
+            height: 42px;
+            left: 1150px;
+            top: 156px;
+            font-size: 36px;
+            line-height: 43px;
+        }
+        #hardwarebox{
+            width: 349px;
+            height: 299px;
+            left: 110px;
+            top: 577px;
+        }
+        #hardwareimg{
+            width: 210px;
+            height: 132px;
+            left: 70px;
+            top: 69px;
+        }
+        #hardwarepalavra{
+            width: 177px;
+            height: 40px;
+            left: 86px;
+            top: 214px;
+        }
+        #perifericosbox{
+            width: 349px;
+            height: 299px;
+            left: 1013px;
+            top: 577px;
+        }
+        #espacogamerimg{
+            width: 210px;
+            height: 132px;
+            left: 17px;
+            top: 73px; 
+        }
+        #perifericosimg{
+            width: 210px;
+            height: 132px;
+            left: 122px;
+            top: 73px;
+        }
+        #perifericospalavra{
+            width: 181px;
+            height: 40px;
+            left: 75px;
+            top: 223px;
+        }
+        #computadoresbox{
+            width: 349px;
+            height: 299px;
+            left: 561px;
+            top: 577px;
+        }
+        #computadoresimg{
+            width: 210px;
+            height: 132px;
+            left: 70px;
+            top: 65px;
+        }
+        #computadorespalavra{
+            width: 258px;
+            height: 40px;
+            left: 35px;
+            top: 219px;
+        }
+        #departamentos{
+            width: 433px;
+            height: 55px;
+            left: 503px;
+            top: 491px;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        #meiobaixo{
+            width: 1440px;
+            height: 1960px;
+            left: 0px;
+            top: 1030px;
+        }
+        #cadeirasgamers{
+            width: 800px;
+            height: 200px;
+            left: 320px;
+            top: 49px;
+        }
+        #notebooks{
+            width: 352px;
+            height: 298px;
+            left: 544px;
+            top: 302px;
+        }
+        #item1{
+            width: 267px;
+            height: 384px;
+            left: 119px;
+            top: 734px; 
+        }
+        #comprar{
+            left: 70px;
+            top: 333px;
+            font-size: 24px;
+        }
+        #placa3060texto{
+            width: 250px;
+            height: 54px;
+            left: 9px;
+            top: 206px;
+            font-size: 14px;
+        }
+        #preco1{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #item2{
+            width: 267px;
+            height: 384px;
+            left: 420px;
+            top: 734px;
+        }
+        #monitortexto{
+            left: 3%;
+            right: 3.37%;
+            top: 52.08%;
+            bottom: 33.85%;
+            font-size: 14px;
+        }
+        #preco2{
+            width: 140px;
+            height: 29px;
+            left: 66px;
+            top: 273px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        #monitorhuskyimg{
+        left: 10%;
+        right: 12%;
+        top: -2%;
+        bottom: 47.92%;   
+        }
+        #item3{
+            width: 267px;
+            height: 384px;
+            left: 734px;
+            top: 734px;
+        }
+        #preco3{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #notebookgameracertexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #notebookgameracerimg{
+            left: 8.73%;
+            right: 12.36%;
+            top: -2.08%;
+            bottom: 50%;
+        }
+        #item4{
+            width: 267px;
+            height: 384px;
+            left: 1045px;
+            top: 734px;
+        }
+        #preco4{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #nitendotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 53.65%;
+            bottom: 32.29%;
+            font-size: 14px;
+        }
+        #nitendoimg{
+            left: 12.73%;
+            right: 12.36%;
+            top: 1.56%;
+            bottom: 46.35%;
+        }
+        #pcgamersmontados{
+            width: 800px;
+            height: 200px;
+            left: 320px;
+            top: 1720px;
+        }
+        #item5{
+            width: 267px;
+            height: 384px;
+            left: 106px;
+            top: 1215px;
+        }
+        #preco5{
+            width: 140px;
+            height: 29px;
+            left: 64px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #ps5texto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #ps5img{
+            width: 172px;
+            height: 176px;
+        }
+        #item7{
+            width: 267px;
+            height: 384px;
+            left: 734px;
+            top: 1215px;
+        }
+        #headsettexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco7{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #headsetimg{
+            width: 200px;
+            height: 200px;
+        }
+        #item8{
+            width: 267px;
+            height: 384px;
+            left: 1048px;
+            top: 1215px;
+        }
+        #tecladotexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco8{
+            width: 140px;
+            height: 29px;
+            left: 70px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #tecladoimg{
+            left: 9.73%;
+            right: 12.36%;
+            top: -2.34%;
+            bottom: 50.26%;
+        }
+        #item6{
+            width: 267px;
+            height: 384px;
+            left: 420px;
+            top: 1215px;
+        }
+        #mousetexto{
+            left: 3.37%;
+            right: 3%;
+            top: 49.74%;
+            bottom: 33.44%;
+            font-size: 14px;
+        }
+        #preco6{
+            width: 140px;
+            height: 29px;
+            left: 75px;
+            top: 273px;
+            font-size: 24px;
+        }
+        #mouseimg{
+            width: 171px;
+            height: 177px;
+        }
+        #ofertas{
+            width: 167px;
+            height: 45px;
+            left: 641px;
+            top: 632px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #confiraofertas {
+            width: 430px;
+            height: 46px;
+            left: 353px;
+            top: 1644px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #botaoclique{
+            width: 230px;
+            height: 45px;
+            left: 786px;
+            top: 1644px;
+        }
+        #cliqueaqui{
+            width: 136px;
+            height: 36px;
+            left: 833px;
+            top: 1650px;  
+        font-size: 24px;
+        line-height: 30px;
+        }
+        footer{
+            width: 1440px;
+            height: 340px;
+            left: 0px;
+            top: 2990px;    
+        }
+        #contaepedido{
+            width: 135px;
+            height: 64px;
+            left: 107px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #chat{
+            width: 63px;
+            height: 23px;
+            left: 107px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px; 
+        }
+        #chatimg{
+            width: 207px;
+            height: 46px;
+            left: 100px;
+            top: 181px;
+        }
+        #departamentosop{
+            width: 227px;
+            height: 77px;
+            left: 422px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;  
+        }
+        #institucional{
+            width: 300px;
+            height: 96px;
+            left: 422px;
+            top: 157px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #pagamentoimg{
+            width: 332px;
+            height: 54px;
+            left: 747px;
+            top: 88px;
+        }
+        #formasdepagar{
+            width: 228px;
+            height: 28px;
+            left: 756px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #copy{
+            width: 181px;
+            height: 27px;
+            left: 629px;
+            top: 286px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #email{
+            width: 233px;
+            height: 48px;
+            left: 756px;
+            top: 155px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #sigaeletro{
+            width: 169px;
+            height: 27px;
+            left: 1217px;
+            top: 37px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #twiter{
+            width: 36px;
+            height: 34.43px;
+            left: 1280px;
+            top: 148px;
+        background: url(imagens/twiter-menor.png);
+        }
+        #whatszap{
+            width: 39px;
+            height: 41px;
+            left: 1282px;
+            top: 229px;
+        background: url(imagens/whatszap-menor.png);
+        }
+        #facebook{
+            width: 39px;
+            height: 37px;
+            left: 1282px;
+            top: 64px;
+            background: url(imagens/facebook-menor.png);
+        }
+        #youtube{
+            width: 39px;
+            height: 39px;
+            left: 1282px;
+            top: 190px;
+            background: url(imagens/youtube-menor.png)
+        }
+        #instagram{
+            width: 39px;
+            height: 38.37px;
+            left: 1282px;
+            top: 107px;
+            background: url(imagens/instagram-menor.png);
+        }
+        #emailimg{
+        width: 28px;
+        height: 22px;
+        left: 1060px;
+        top: 183px; 
+        background: url(imagens/email-menor.png);
+        }
+}
+
+
+

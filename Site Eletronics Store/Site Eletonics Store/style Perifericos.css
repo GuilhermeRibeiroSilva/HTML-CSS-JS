@@ -1,0 +1,2323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'inter','sans-serif';
+    }
+    button {
+        border: 0;
+        padding: 0;
+        font-family: inherit;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+      .navbar { /*'mexe na barra toda*/
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1920px;
+        height: 140px;
+        background: #328EF0;
+        color: #f9f9f9;
+        font-family: "Inter";
+        box-sizing: border-box;
+      }
+      .navbar-overlay {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.356);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .navbar-menu {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        translate: -100% 0;
+        width: 270px;
+        height: 1920px;
+        padding: 20px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #000000;
+        visibility: hidden;
+        transition: translate 0.3s;
+      }
+      body.open .navbar-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+      .navbar-burger {  /*mexe no menu*/
+        position: absolute;
+        display: grid;
+        place-items: center;
+        width: 75px;
+        height: 57px;
+        left: 62px;
+        top: 37px;
+        padding: 0;
+      }
+      .navbar-menu > button {
+        color: rgb(255, 255, 255);
+        background: transparent;
+        padding: 0 8px;
+      }
+      .navbar-menu > a > button.active {
+        margin-top: 15px;
+        font-size: 27px;
+        color: #C9CACA;
+      }
+       summary {
+        color: #C9CACA;
+        font-size: 27px;
+        margin-top: 15px;
+      }
+      p{
+        color: #C9CACA;
+        text-align: left;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: -8px;
+      }
+      a{
+        color: inherit;
+        text-decoration: none;
+    }
+    input[type=text] {
+        background-color: #C9CACA;
+        width: 150px;
+        height: 20px;
+        border-radius: 7px;
+        border: 3px solid #000000;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      input[type=text]:focus {
+        width: 80%;
+      }
+      .navbar-menu {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        translate: -100% 0;
+        width: 270px;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #328EF0;
+        visibility: hidden;
+        transition: translate 0.3s;
+      } 
+      body.open .navbar-menu {
+        translate: 0 0;
+        visibility: visible;
+      }
+        #logo{
+        position: absolute;
+        width: 166px;
+        height: 140px;
+        left: 172px;
+        top: -5px;
+        }
+        #carrinho{
+        position: absolute;
+        width: 70px;
+        height: 62px;
+        left: 1799px;
+        top: 34px;
+        }
+    #meio-alto {
+        width: 1920px;
+        height: 466.5px;
+        margin-top: 120px;
+    }
+    #meio-alto {
+        width: 1920px;
+        height: 466.5px;
+        margin-top: 140px;
+        margin-bottom: 120px;
+    }
+    #meio {
+        width: 1920px;
+        height: 4004px;
+        display: flex;
+        flex-direction: column;
+        gap: 220px;
+    }
+    #conteudo_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        align-items: center;
+    
+    }
+    #conteudo_1 img {
+        margin-bottom: -80px;
+        width: 1550px;
+        height: 260px;
+        flex-shrink: 0;
+    }
+    #conteudo_1 h2 {
+        margin-bottom: -90px;
+        color: #00B0DC;
+        font-family: 'Inter';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 141px;
+        justify-content: center;
+    }
+    .item {
+        width: 290px;
+        height: 434px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #328EF0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .item_imagem {
+        width: 162.921px;
+        height: 169.531px;
+        flex-shrink: 0;
+    }
+    .item_texto {
+        width: 260px;
+        height: 73.205px;
+        flex-shrink: 0;
+        color: #C9CACA;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: center;
+        width: 280px;
+        margin-left: 5px;
+    }
+    .item_butao {
+        width: 250px;
+        height: 67.976px;
+        flex-shrink: 0;
+        border-radius: 14px;
+        border: 1px solid #4F32F0;
+        background: #3252F0;
+        color: #C9CACA;
+        font-family: 'Inter';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_preco {
+        color: #C9CACA;
+        font-family: 'Inter';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 175px;
+        height: 29px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #meio_baixo{
+        top: 3800px;
+        margin-top: -60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    footer{
+    position: absolute;
+    width: 1920px;
+    height: 578px;
+    left: 0px;
+    top: 4300px;
+    background: #328EF0;
+    }
+    #contaepedido{
+    position: absolute;
+    width: 221px;
+    height: 103px;
+    left: 96px;
+    top: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #C9CACA; 
+    }
+    #chat{
+    position: absolute;
+    width: 82px;
+    height: 34px;
+    left: 96px;
+    top: 221px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #C9CACA;    
+    }
+    #chatimg{
+    position: absolute;
+    width: 338px;
+    height: 65px;
+    left: 53px;
+    top: 255px; 
+    }
+    #departamentosop{
+    position: absolute;
+    width: 234px;
+    height: 137px;
+    left: 449px;
+    top: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;  
+    color: #C9CACA;
+    }
+    #institucional{
+    position: absolute;
+    width: 481px;
+    height: 207px;
+    left: 443px;
+    top: 221px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #C9CACA;
+    }
+    #pagamentoimg{
+    position: absolute;
+    width: 456px;
+    height: 86px;
+    left: 970px;
+    top: 107px;
+    }
+    #formasdepagar{
+    position: absolute;
+    width: 321px;
+    height: 39px;
+    left: 970px;
+    top: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #C9CACA;
+    }
+    #copy{
+    position: absolute;
+    width: 295px;
+    height: 36px;
+    left: 813px;
+    top: 471px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #C9CACA;
+    }
+    #email{
+    position: absolute;
+    width: 452px;
+    height: 75px;
+    left: 960px;
+    top: 266px; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #C9CACA;
+    }
+    #sigaeletro{
+    position: absolute;
+    width: 234px;
+    height: 32px;
+    left: 1595px;
+    top: 110px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #C9CACA;
+    }
+    #twiter{
+        position: absolute;
+        width: 69px;
+        height: 66px;
+        left: 1649px;
+        top: 292px;
+        background: url(imagens/twiter.png)
+    }
+    #whatszap{
+        position: absolute;
+        width: 75.49px;
+        height: 68px;
+        left: 1651px;
+        top: 437px;
+        background: url(imagens/whatszap.png)
+    }
+    #facebook{
+        position: absolute;
+        width: 52px;
+        height: 68px;
+        left: 1666px;
+        top: 150px;
+        background: url(imagens/facebook.png)
+    }
+    #youtube{
+        position: absolute;
+        width: 68px;
+        height: 68px;
+        left: 1655px;
+        top: 369px;
+        background: url(imagens/youtube.png)
+    }
+    #instagram{
+        position: absolute;
+        width: 69.11px;
+        height: 68px;
+        left: 1657px;
+        top: 221px;
+        background: url(imagens/instagram.png)
+    }
+    #emailimg{
+        position: absolute;
+        width: 58px;
+        height: 43px;
+        left: 1390px;
+        top: 290px; 
+        background: url(imagens/email.png)
+    }
+@media(width: 1280px){
+        body{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+            }
+            .navbar{
+                width: 1280px;
+                height: 120px;
+            }
+            .navbar-burger {  /*mexe no menu*/
+                width: 53px;
+                height: 39px;
+                left: 54px;
+                top: 37px;
+              }
+              .navbar-menu > a > button.active {
+                font-size: 25px;
+              }
+            #logo{
+                width: 144px;
+                height: 120px;
+                left: 135px;
+                top: 0px;
+            }        
+            #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 1164px;
+            top: 22px;
+            }
+            #meio-alto {
+                margin-top: 120px;
+                margin-bottom: -40px;
+            }
+            #meio-alto img {
+                width: 1280px;
+                height: 348px;
+            }
+            #meio {
+                width: 1280px;
+                height: 2500px;
+                gap: 15px;
+            }
+            #conteudo_1 {
+                margin-bottom: 150px;
+                gap: 150px;
+            }
+            #conteudo_1 img {
+                margin-bottom: -100px;
+                width: 1160px;
+                height: 169px;
+            }
+            #conteudo_1 h2 {
+                margin-bottom: -90px;
+                font-size: 36px;
+                line-height: normal;
+            }
+            #items {
+                gap: 40px;
+            }
+            .item {
+                width: 267px;
+                height: 384px;
+                gap: 15px;
+            }
+            .item_imagem {
+                width: 162.921px;
+                height: 169.531px;
+            }
+            .item_texto {
+                width: 248px;
+                height: 65px;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+            .item_butao {
+                width: 230.172px;
+                height: 60.145px;
+                font-size: 24px;
+            }
+            .item_preco {
+                font-size: 24px;
+                width: 200px;
+                height: 30px;
+            }
+            #meio_baixo{
+                margin-top: 80px;
+                gap: 50px;
+            }
+            #meio_baixo .tdager{
+            width: 866px;
+            height: 126.179px;
+            }
+            #meio_baixo .geforce{
+            width: 866px;
+            height: 126.179px;
+            }
+            footer{
+            width: 1280px;
+            height: 340px;
+            left: 0px;
+            top: 3050px;  
+            }
+            #contaepedido{
+                width: 135px;
+                height: 64px;
+                left: 107px;
+                top: 56px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            #chat{
+                width: 63px;
+                height: 23px;
+                left: 107px;
+                top: 159px; 
+                font-size: 14px;
+                line-height: 24px;    
+            }
+            #chatimg{
+            width: 207px;
+            height: 46px;
+            left: 100px;
+            top: 181px; 
+            }
+            #departamentosop{
+                width: 227px;
+                height: 77px;
+                left: 371px;
+                top: 56px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            #institucional{
+                width: 215px;
+                height: 96px;
+                left: 371px;
+                top: 159px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            #pagamentoimg{
+            width: 332px;
+            height: 54px;
+            left: 630px;
+            top: 84px;
+            }
+            #formasdepagar{
+                width: 228px;
+                height: 28px;
+                left: 660px;
+                top: 55px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            #copy{
+                width: 176px;
+                height: 27px;
+                left: 552px;
+                top: 287px;
+                font-size: 14px;
+                line-height: 19px;
+            }
+            #email{
+                width: 323px;
+                height: 75px;
+                left: 626px;
+                top: 157px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            #sigaeletro{
+            width: 169px;
+            height: 27px;
+            left: 1080px;
+            top: 57px;
+            font-size: 14px;
+            line-height: 24px;
+            }
+            #twiter{
+            width: 39px;
+            height: 37.3px;
+            left: 1111px;
+            top: 174px;
+            background: url(imagens/twiter-menor.png);
+            }
+            #whatszap{
+            width: 39px;
+            height: 41px;
+            left: 1113px;
+            top: 255px;
+            background: url(imagens/whatszap-menor.png);
+            }
+            #facebook{
+                width: 39px;
+                height: 37px;
+                left: 1115px;
+                top: 89px;
+                background: url(imagens/facebook-menor.png);
+            }
+            #youtube{
+                width: 39px;
+                height: 39px;
+                left: 1113px;
+                top: 216px;
+                background: url(imagens/youtube-menor.png)
+            }
+            #instagram{
+                width: 39px;
+                height: 38.37px;
+                left: 1115px;
+                top: 132px;
+                background: url(imagens/instagram-menor.png);
+            }
+            #emailimg{
+            width: 28px;
+            height: 22px;
+            left: 822px;
+            top: 178px; 
+            background: url(imagens/email-menor.png);
+            }
+}
+@media(width: 1366px){    
+            body{
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                overflow-x: hidden;
+                }
+                .navbar{
+                    width: 1366px;
+                    height: 120px;
+                }
+                .navbar-burger {  /*mexe no menu*/
+                    width: 53px;
+                    height: 39px;
+                    left: 54px;
+                    top: 37px;  
+                  }
+                  .navbar-menu > a > button.active {
+                    font-size: 25px;
+                  }
+                #logo{
+                    width: 144px;
+                    height: 120px;
+                    left: 135px;
+                    top: 0px;
+                }        
+                #carrinho{
+                width: 70px;
+                height: 62px;
+                left: 1260px;
+                top: 22px;
+                }
+                #meio-alto {
+                    margin-top: 120px;
+                    margin-bottom: -40px;
+                }
+                #meio-alto img {
+                    width: 1366px;
+                    height: 348px;
+                }
+                #meio {
+                    width: 1366px;
+                    height: 2500px;
+                    gap: 15px;
+                }
+                #conteudo_1 {
+                    margin-bottom: 150px;
+                    gap: 150px;
+                }
+                #conteudo_1 img {
+                    margin-bottom: -100px;
+                    width: 1160px;
+                    height: 169px;
+                }
+                #conteudo_1 h2 {
+                    margin-bottom: -90px;
+                    font-size: 36px;
+                }
+                #items {
+                    gap: 40px;
+                }
+                .item {
+                    width: 267px;
+                    height: 384px;
+                    gap: 15px;
+                }
+                .item_imagem {
+                    width: 162.921px;
+                    height: 169.531px;
+                }
+                .item_texto {
+                    width: 248px;
+                    height: 65px;
+                    font-size: 14px;
+                    margin-left: 2px;          
+                }
+                .item_butao {
+                    width: 230.172px;
+                    height: 60.145px;
+                    font-size: 24px;
+                }
+                .item_preco {
+                    font-size: 24px;
+                    width: 200px;
+                    height: 30px;
+                }
+                #meio_baixo{
+                    margin-top: 80px;
+                    gap: 100px;
+                }
+                #meio_baixo .tdager{
+                    width: 866px;
+                    height: 126.179px;
+                    }
+                    #meio_baixo .geforce{
+                    width: 866px;
+                    height: 126.179px;
+                    }
+                footer{
+                width: 1366px;
+                height: 340px;
+                left: 0px;
+                top: 3100px;  
+                }
+                #contaepedido{
+                    width: 135px;
+                    height: 64px;
+                    left: 107px;
+                    top: 56px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                #chat{
+                    width: 63px;
+                    height: 23px;
+                    left: 107px;
+                    top: 159px; 
+                    font-size: 14px;
+                    line-height: 24px;    
+                }
+                #chatimg{
+                width: 207px;
+                height: 46px;
+                left: 100px;
+                top: 181px; 
+                }
+                #departamentosop{
+                    width: 227px;
+                    height: 77px;
+                    left: 422px;
+                    top: 56px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                #institucional{
+                    width: 215px;
+                    height: 96px;
+                    left: 422px;
+                    top: 157px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                #pagamentoimg{
+                width: 332px;
+                height: 54px;
+                left: 716px;
+                top: 84px;
+                }
+                #formasdepagar{
+                    width: 228px;
+                    height: 28px;
+                    left: 747px;
+                    top: 56px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                #copy{
+                    width: 144px;
+                    height: 27px;
+                    left: 611px;
+                    top: 287px;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                #email{
+                    width: 233px;
+                    height: 48px;
+                    left: 742px;
+                    top: 161px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                #sigaeletro{
+                width: 169px;
+                height: 27px;
+                left: 1143px;
+                top: 37px;
+                font-size: 14px;
+                line-height: 24px;
+                }
+                #twiter{
+                width: 39px;
+                height: 37.3px;
+                left: 1180px;
+                top: 153px;
+                background: url(imagens/twiter-menor.png);
+                }
+                #whatszap{
+                width: 39px;
+                height: 41px;
+                left: 1182px;
+                top: 241px;
+                background: url(imagens/whatszap-menor.png);
+                }
+                #facebook{
+                    width: 39px;
+                    height: 37px;
+                    left: 1182px;
+                    top: 65px;
+                    background: url(imagens/facebook-menor.png);
+                }
+                #youtube{
+                    width: 39px;
+                    height: 39px;
+                    left: 1182px;
+                    top: 197px;
+                    background: url(imagens/youtube-menor.png)
+                }
+                #instagram{
+                    width: 39px;
+                    height: 38.37px;
+                    left: 1182px;
+                    top: 109px;
+                    background: url(imagens/instagram-menor.png);
+                }
+                #emailimg{
+                width: 28px;
+                height: 22px;
+                left: 960px;
+                top: 183px; 
+                background: url(imagens/email-menor.png);
+                }
+}
+@media(width: 768px) {
+                body{
+                 margin: 0;
+                 padding: 0;
+                 max-width: 100%;
+                 overflow-x: hidden;
+                }
+                .navbar{
+                    width: 768px;
+                    height: 112px;
+                }
+                .navbar-burger {  /*mexe no menu*/
+                    width: 53px;
+                    height: 39px;
+                    left: 44px;
+                    top: 40px; 
+                  }
+                  .navbar-menu > a > button.active {
+                    font-size: 25px;
+                  }
+                #logo{
+                    width: 130px;
+                    height: 105px;
+                    left: 124px;
+                    top: 7px;
+                }
+                #carrinho{
+                    width: 70px;
+                    height: 62px;
+                    left: 663px;
+                    top: 29px;
+                }
+                #meio-alto {
+                    width: 768px;
+                    height: 202px;
+                    left: 0px;
+                    top: 0px; 
+                    margin-top: 112px;
+                  }
+                  #meio-alto img {
+                    width: 774px;
+                    height: 194px;
+                  }
+                  #meio {
+                    width: 768px;
+                    height: 3786px;
+                    left: 0px;
+                    top: 202px;
+                  }
+                  #conteudo_1 {
+                      margin-bottom: 10px;
+                      gap: 100px;
+                      margin-top: -80px;
+                  }
+                  #conteudo_1 img {
+                    width: 575px;
+                    height: 83.78px;
+                  }
+                  #conteudo_1 h2 {
+                      margin-top: 20px;
+                      font-size: 36px;
+                      line-height: normal;
+                      margin-bottom: -260px;
+                  }
+                  #items {
+                      gap: 90px;
+                  }
+                   #meio_baixo{
+                    width: 768px;
+                    height: 271px;
+                    left: 0px;
+                    top: 3988px;
+                    margin-top: -175px;        
+                  }
+                   #meio_baixo .tdager{
+                    width: 600px;
+                    height: 87.42px;
+                  }
+                  #meio_baixo .geforce{
+                    width: 600px;
+                    height: 87.42px;
+                  }
+                 footer{
+                    width: 768px;
+                    height: 389px;
+                    left: 0px;
+                    top: 5070px;  
+                 }
+                 #contaepedido{
+                     width: 135px;
+                     height: 64px;
+                     left: 64px;
+                     top: 30px;
+                     font-family: "Inter", sans-serif;
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #chat{
+                     width: 63px;
+                     height: 23px;
+                     left: 67px;
+                     top: 109px; 
+                     font-family: "Inter", sans-serif;
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;    
+                 }
+                 #chatimg{
+                     position: absolute;
+                     width: 140px;
+                     height: 25px;
+                     left: 60px;
+                     top: 131px; 
+                 }
+                 #departamentosop{
+                     width: 227px;
+                     height: 77px;
+                     left: 331px;
+                     top: 30px;
+                     font-family: "Inter", sans-serif;
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #institucional{
+                     width: 215px;
+                     height: 96px;
+                     left: 331px;
+                     top: 139px;
+                     font-family: "Inter", sans-serif;
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #pagamentoimg{
+                     position: absolute;
+                     width: 232px;
+                     height: 34px;
+                     left: 50px;
+                     top: 190px;
+                 }
+                 #formasdepagar{
+                     width: 228px;
+                     height: 28px;
+                     left: 68px;
+                     top: 170px;
+                     font-family: 'Inter';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #email{
+                     width: 323px;
+                     height: 75px;
+                     left: 65px;
+                     top: 237px;
+                     font-family: 'Inter';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #emailimg{
+                     width: 28px;
+                     height: 22px;
+                     left: 280px;
+                     top: 258px; 
+                     background: url(imagens/email-menor.png);
+                 }
+                 #sigaeletro{
+                     position: absolute;
+                     width: 169px;
+                     height: 27px;
+                     left: 590px;
+                     top: 30px;
+                     font-family: 'Inter';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 14px;
+                     line-height: 24px;
+                 }
+                 #facebook{
+                     width: 35px;
+                     height: 37px;
+                     left: 620px;
+                     top: 59px;
+                     background: url(imagens/facebook-menor.png),  50% / cover no-repeat;
+                 }
+                 #instagram{
+                     width: 35px;
+                     height: 38.37px;
+                     left: 620px;
+                     top: 95px;
+                     background: url(imagens/instagram-menor.png);
+                 }
+                 #twiter{
+                     position: absolute;
+                     width: 35px;
+                     height: 37.3px;
+                     left: 620px;
+                     top: 135px;
+                     background: url(imagens/twiter-menor.png);
+                 }
+                 #youtube{
+                     position: absolute;
+                     width: 35px;
+                     height: 39px;
+                     left: 620px;
+                     top: 175px;
+                     background: url(imagens/youtube-menor.png)
+                 }
+                 #whatszap{
+                     position: absolute;
+                     width: 35px;
+                     height: 41px;
+                     left: 620px;
+                     top: 215px;
+                     background: url(imagens/whatszap-menor.png);
+                 
+                 }
+                 #copy{
+                    width: 145px;
+                    height: 27px;
+                    left: 303px;
+                    top: 333px;
+                     font-family: 'Inter';
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 16px;
+                     line-height: 19px;
+                 } 
+}
+@media(width: 320px){ 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    }
+                .navbar{
+                    width: 320px;
+                    height: 39px;
+                }
+                .navbar-burger {  /*mexe no menu*/
+                    left: -12px;
+                    top: -10px;
+                }
+                .navbar-burger > img {
+                    width: 22px;
+                    height: 16.19px;
+                }
+                .navbar-menu > a > button.active {
+                    font-size: 20px;
+                }
+                summary {
+                    font-size: 20px;
+                  }
+                  .navbar-menu {
+                    width: 200px;
+                  } 
+                #logo{
+                width: 38px;
+                height: 38px;
+                left: 42px;
+                top: 1px;
+                }        
+                #carrinho{
+                width: 21px;
+                height: 19px;
+                left: 286px;
+                top: 10px;
+                }
+                #meio-alto {
+                    width: 320px;
+                    height: 84px;
+                    left: 0px;
+                    top: 0px;
+                    margin-top: 39px;
+                  }
+                  #meio-alto img {
+                    width: 320px;
+                    height: 84px;
+                  }
+                  #meio {
+                    width: 320px;
+                    height: 478px;
+                    left: 0px;
+                    top: 84px;
+                  }
+                  #conteudo_1 {
+                      margin-bottom: -125px;
+                      gap: 100px;
+                      margin-top: -100px;
+                  }
+                  #conteudo_1 img {
+                    width: 270px;
+                    height: 39.34px;
+                  }
+                  #conteudo_1 h2 {
+                      margin-top: 0px;
+                      font-size: 12px;
+                      line-height: normal;
+                      margin-bottom: -180px;
+                  }
+                  #items {
+                    gap: 21px;
+                }
+                .item {
+                    width: 58px;
+                    height: 83px;
+                    left: 10px;
+                    top: 186px;
+                    border-radius: 10px;
+                    gap: 2px;
+                }
+                .item_imagem {
+                    width: 31px;
+                    height: 33px;;
+                }
+                .item_texto {
+                    width: 52px;
+                    height: 14px;
+                    font-size: 3px;
+                    margin-left: 0px;          
+                }
+                .item_butao {
+                    width: 50px;
+                    height: 13px;
+                    font-size: 8px;
+                }
+                .item_preco {
+                    width: 50px;
+                    height: 11px;
+                    font-size: 8px;
+                }
+                #meio_baixo{
+                    width: 320px;
+                    height: 103px;
+                    left: 0px;
+                    top: 562px;  
+                margin-top: -200px;
+                gap: 20px;
+                }
+                #meio_baixo .tdager{
+                    width: 200px;
+                    height: 29.141px;
+                }
+                #meio_baixo .geforce{
+                    width: 200px;
+                    height: 29.141px;
+                }
+                footer{
+                    width: 320px;
+                    height: 107px;
+                    left: 0px;
+                    top: 750px;    
+                }
+                #contaepedido{
+                    width: 37px;
+                    height: 19px;
+                    left: 26px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #chat{
+                    width: 14px;
+                    height: 7px;
+                    left: 28px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;  
+                }
+                #chatimg{
+                    width: 46px;
+                    height: 9px;
+                    left: 24px;
+                    top: 57px;
+                }
+                #departamentosop{
+                    width: 42px;
+                    height: 26px;
+                    left: 92px;
+                    top: 19px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #institucional{
+                    width: 76px;
+                    height: 31px;
+                    left: 92px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #pagamentoimg{
+                    width: 76px;
+                    height: 12.36px;
+                    left: 173px;
+                    top: 27px;
+                }
+                #formasdepagar{
+                    width: 57px;
+                    height: 6px;
+                    left: 179px;
+                    top: 21px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #copy{
+                    width: 54px;
+                    height: 9px;
+                    left: 136px;
+                    top: 92px;
+                    font-size: 6px;
+                    line-height: 7px;
+                }
+                #email{
+                    width: 81px;
+                    height: 13px;
+                    left: 179px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #sigaeletro{
+                    width: 43px;
+                    height: 8px;
+                    left: 273px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #twiter{
+                    width: 9px;
+                    height: 8.61px;
+                    left: 290px;
+                    top: 51px;
+                background: url(imagens/twiter-menor-menor.png);
+                }
+                #whatszap{
+                    width: 10px;
+                    height: 10.51px;
+                    left: 290px;
+                    top: 74px;
+                background: url(imagens/whatszap-menor-menor.png);
+                }
+                #facebook{
+                    width: 10px;
+                    height: 9.49px;
+                    left: 290px;
+                    top: 30px;        
+                    background: url(imagens/facebook-menor-menor.png);
+                }
+                #youtube{
+                    width: 10px;
+                    height: 10px;
+                    left: 290px;
+                    top: 62px;
+                    background: url(imagens/youtube-menor-menor.png)
+                }
+                #instagram{
+                    width: 10px;
+                    height: 9.84px;
+                    left: 290px;
+                    top: 40px;
+                    background: url(imagens/instagram-menor-menor.png);
+                }
+                #emailimg{
+                width: 9px;
+                height: 5.836px;
+                left: 255px;
+                top: 55px;
+                background: url(imagens/email-menor-menor.png);
+                }
+}
+@media(width: 375px){ 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    }
+                    .navbar{
+                        width: 375px;
+                        height: 39px;
+                    }
+                    .navbar-burger {  /*mexe no menu*/
+                        left: -12px;
+                        top: -10px;
+                    }
+                    .navbar-burger > img {
+                        width: 22px;
+                        height: 16.19px;
+                    }
+                    .navbar-menu > a > button.active {
+                        font-size: 20px;
+                    }
+                    summary {
+                        font-size: 20px;
+                      }
+                      .navbar-menu {
+                        width: 200px;
+                      } 
+                    #logo{
+                        width: 40px;
+                        height: 37px;
+                        left: 41px;
+                        top: 1px;
+                    }        
+                    #carrinho{
+                    width: 21px;
+                    height: 19px;
+                    left: 344px;
+                    top: 10px;;
+                    }
+                #meio-alto {
+                    width: 375px;
+                    height: 82px;
+                    left: 0px;
+                    top: 0px;
+                    margin-top: 39px;
+                  }
+                  #meio-alto img {
+                    width: 375px;
+                    height: 82px;
+                  }
+                  #meio {
+                    width: 375px;
+                    height: 479px;
+                    left: 0px;
+                    top: 82px;                    
+                  }
+                  #conteudo_1 {
+                      margin-bottom: -120px;
+                      gap: 100px;
+                      margin-top: -90px;
+                  }
+                  #conteudo_1 img {
+                    width: 270px;
+                    height: 39.34px;
+                  }
+                  #conteudo_1 h2 {
+                      margin-top: 5px;
+                      font-size: 12px;
+                      line-height: normal;
+                      margin-bottom: -100px;
+                  }
+                  #items {
+                    gap: 30px;
+                }
+                .item {
+                    width: 58px;
+                    height: 83px;
+                    left: 10px;
+                    top: 186px;
+                    border-radius: 10px;
+                    gap: 2px;
+                }
+                .item_imagem {
+                    width: 31px;
+                    height: 33px;;
+                }
+                .item_texto {
+                    width: 52px;
+                    height: 14px;
+                    font-size: 3px;
+                    margin-left: 0px;          
+                }
+                .item_butao {
+                    width: 50px;
+                    height: 13px;
+                    font-size: 8px;
+                }
+                .item_preco {
+                    width: 50px;
+                    height: 11px;
+                    font-size: 8px;
+                }
+                #meio_baixo{
+                    width: 375px;
+                    height: 97px;
+                    left: 0px;
+                    top: 561px;
+                margin-top: -195px;
+                gap: 20px;
+                }
+                #meio_baixo .tdager{
+                    width: 200px;
+                    height: 29.141px;
+                }
+                #meio_baixo .geforce{
+                    width: 200px;
+                    height: 29.141px;
+                }
+                footer{
+                    width: 375px;
+                    height: 107px;
+                    left: 0px;
+                    top: 800px;   
+                }
+                #contaepedido{
+                    width: 37px;
+                    height: 19px;
+                    left: 26px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #chat{
+                    width: 14px;
+                    height: 7px;
+                    left: 28px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;  
+                }
+                #chatimg{
+                    width: 46px;
+                    height: 9px;
+                    left: 24px;
+                    top: 57px;
+                }
+                #departamentosop{
+                    width: 42px;
+                    height: 26px;
+                    left: 94px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #institucional{
+                    width: 76px;
+                    height: 31px;
+                    left: 94px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #pagamentoimg{
+                    width: 76px;
+                    height: 12.36px;
+                    left: 179px;
+                    top: 27px;
+                }
+                #formasdepagar{
+                    width: 57px;
+                    height: 6px;
+                    left: 188px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #copy{
+                    width: 54px;
+                    height: 9px;
+                    left: 160px;
+                    top: 89px;
+                    font-size: 6px;
+                    line-height: 7px;
+                }
+                #email{
+                    width: 81px;
+                    height: 13px;
+                    left: 187px;
+                    top: 50px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #sigaeletro{
+                    width: 43px;
+                    height: 8px;
+                    left: 314px;
+                    top: 20px;
+                    font-size: 5px;
+                    line-height: 6px;
+                }
+                #twiter{
+                    width: 9px;
+                    height: 8.61px;
+                    left: 331px;
+                    top: 50px;
+                background: url(imagens/twiter-menor-menor.png);
+                }
+                #whatszap{
+                    width: 10px;
+                    height: 10.51px;
+                    left: 331px;
+                    top: 70px;
+                background: url(imagens/whatszap-menor-menor.png);
+                }
+                #facebook{
+                    width: 10px;
+                    height: 9.49px;
+                    left: 331px;
+                    top: 28px;      
+                    background: url(imagens/facebook-menor-menor.png);
+                }
+                #youtube{
+                    width: 10px;
+                    height: 10px;
+                    left: 331px;
+                    top: 60px;
+                    background: url(imagens/youtube-menor-menor.png)
+                }
+                #instagram{
+                    width: 10px;
+                    height: 9.84px;
+                    left: 331px;
+                    top: 39px;
+                    background: url(imagens/instagram-menor-menor.png);
+                }
+                #emailimg{
+                width: 9px;
+                height: 5.836px;
+                left: 265px;
+                top: 55px;
+                background: url(imagens/email-menor-menor.png);
+                }
+}
+@media(width: 425px){ 
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 425px;
+            height: 39px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            left: -12px;
+            top: -9px;
+        }
+        .navbar-burger > img {
+            width: 22px;
+            height: 16.19px;
+        }
+        .navbar-menu > a > button.active {
+            font-size: 20px;
+        }
+        summary {
+            font-size: 20px;
+          }
+          .navbar-menu {
+            width: 200px;
+          } 
+        #logo{
+            width: 40px;
+            height: 37px;
+            left: 45px;
+            top: 1px;            
+        }        
+        #carrinho{
+            width: 21px;
+            height: 19px;
+            left: 397px;
+            top: 10px;
+        }
+    #meio-alto {
+        width: 425px;
+        height: 91px;
+        left: 0px;
+        top: 0px;
+        margin-top: 39px;
+      }
+      #meio-alto img {
+        width: 425px;
+        height: 95px;
+      }
+      #meio {
+        width: 425px;
+        height: 478px;
+        left: 0px;
+        top: 91px;        
+      }
+      #conteudo_1 {
+          margin-bottom: -100px;
+          gap: 100px;
+          margin-top: -95px;
+      }
+      #conteudo_1 img {
+        width: 270px;
+        height: 39.34px;
+      }
+      #conteudo_1 h2 {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: normal;
+        margin-bottom: -110px;
+      }
+      #items {
+        gap: 40px;
+    }
+    .item {
+        width: 58px;
+        height: 83px;
+        border-radius: 10px;
+        gap: 2px;
+    }
+    .item_imagem {
+        width: 31px;
+        height: 33px;;
+    }
+    .item_texto {
+        width: 52px;
+        height: 14px;
+        font-size: 3px;
+        margin-left: 0px;          
+    }
+    .item_butao {
+        width: 50px;
+        height: 13px;
+        font-size: 8px;
+    }
+    .item_preco {
+        width: 48px;
+        height: 11px;
+        font-size: 8px;
+    }
+    #meio_baixo{
+    width: 425px;
+    height: 89px;
+    left: 0px;
+    top: 569px;
+    margin-top: -200px;
+    gap: 20px;
+    }
+    #meio_baixo .tdager{
+        width: 250px;
+        height: 36.426px;
+    }
+    #meio_baixo .geforce{
+        width: 250px;
+        height: 36.426px;
+    }
+    footer{
+        width: 425px;
+        height: 107px;
+        left: 0px;
+        top: 860px; 
+    }
+    #contaepedido{
+        width: 44px;
+        height: 23px;
+        left: 21px;
+        top: 16px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #chat{
+        width: 16px;
+        height: 7px;
+        left: 21px;
+        top: 51px;
+        font-size: 6px;
+        line-height: 7px; 
+    }
+    #chatimg{
+        width: 59px;
+        height: 13px;
+        left: 21px;
+        top: 60px;
+    }
+    #departamentosop{
+        width: 49px;
+        height: 30px;
+        left: 96px;
+        top: 16px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #institucional{
+        width: 96px;
+        height: 37px;
+        left: 96px;
+        top: 51px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #pagamentoimg{
+        width: 89px;
+        height: 16px;
+        left: 210px;
+        top: 23px;
+    }
+    #formasdepagar{
+        width: 69px;
+        height: 6px;
+        left: 214px;
+        top: 16px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+#copy{
+width: 54px;
+height: 9px;
+left: 190px;
+top: 91px;
+font-size: 6px;
+line-height: 7px;
+}
+    #email{
+        width: 95px;
+        height: 13px;
+        left: 214px;
+        top: 51px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #sigaeletro{
+        width: 50px;
+        height: 8px;
+        left: 353px;
+        top: 16px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+    #twiter{
+        width: 9px;
+        height: 8.61px;
+        left: 373px;
+        top: 44px;
+    background: url(imagens/twiter-menor-menor.png);
+    }
+    #whatszap{
+        width: 10px;
+        height: 10.51px;
+        left: 373px;
+        top: 67px;
+    background: url(imagens/whatszap-menor-menor.png);
+    }
+    #facebook{
+        width: 10px;
+        height: 9.49px;
+        left: 373px;
+        top: 24px;     
+        background: url(imagens/facebook-menor-menor.png);
+    }
+    #youtube{
+        width: 10px;
+        height: 10px;
+        left: 373px;
+        top: 55px;
+        background: url(imagens/youtube-menor-menor.png)
+    }
+    #instagram{
+        width: 10px;
+        height: 9.84px;
+        left: 373px;
+        top: 34px;
+        background: url(imagens/instagram-menor-menor.png);
+    }
+    #emailimg{
+    width: 9px;
+    height: 5.836px;
+    left: 308px;
+    top: 58px;
+    background: url(imagens/email-menor-menor.png);
+    }
+} 
+@media(width: 1024px){    
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 1024px;
+            height: 112px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 40px;
+            top: 36px; 
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 130px;
+            height: 105px;
+            left: 117px;
+            top: 3px;
+        }        
+        #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 929px;
+            top: 25px;
+        }
+        #meio-alto {
+            margin-top: 112px;
+            width: 1024px;
+            height: 230px;
+            left: 0px;
+            top: 0px;
+            margin-bottom: 25px;
+        }
+        #meio-alto img {
+            width: 1024px;
+            height: 230px;
+        }
+        #meio {
+            width: 1024px;
+            height: 3744px;
+            left: 0px;
+            top: 230px;
+            gap: 15px;
+        }
+        #conteudo_1 {
+            margin-bottom: 100px;
+            gap: 150px;
+            margin-top: 20px;
+        }
+        #conteudo_1 img {
+            margin-bottom: -135px;
+            width: 700px;
+            height: 101.992px;
+        }
+        #conteudo_1 h2 {
+            margin-bottom: -70px;
+            font-size: 36px;
+        }
+        #items {
+            gap: 50px 150px;
+        }
+        .item {
+            width: 267px;
+            height: 384px;
+            gap: 15px;
+        }
+        .item_imagem {
+            width: 162.921px;
+            height: 169.531px;
+        }
+        .item_texto {
+            width: 248px;
+            height: 65px;
+            font-size: 14px;
+            margin-left: 8px;          
+        }
+        .item_butao {
+            width: 230.172px;
+            height: 60.145px;
+            font-size: 24px;
+        }
+        .item_preco {
+            font-size: 24px;
+            width: 200px;
+            height: 30px;
+        }
+        #meio_baixo{
+            width: 1024px;
+            height: 334px;
+            left: 0px;
+            top: 3974px;
+            margin-top: 50px;
+            gap: 50px;
+        }
+        #meio_baixo .tdager{
+            width: 700px;
+            height: 101.992px;
+        }
+        #meio_baixo .geforce{
+            width: 700px;
+            height: 101.992px;
+        }
+        footer{
+            width: 1024px;
+            height: 375px;
+            left: 0px;
+            top: 4445px;     
+        }
+        #contaepedido{
+            width: 135px;
+            height: 64px;
+            left: 39px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #chat{
+            width: 63px;
+            height: 23px;
+            left: 39px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px; 
+        }
+        #chatimg{
+            width: 169px;
+            height: 38px;
+            left: 38px;
+            top: 182px;
+        }
+        #departamentosop{
+            width: 227px;
+            height: 77px;
+            left: 257px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #institucional{
+            width: 230px;
+            height: 96px;
+            left: 263px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px;            
+        }
+        #pagamentoimg{
+            width: 243px;
+            height: 44px;
+            left: 494px;
+            top: 76px;
+        }
+        #formasdepagar{
+            width: 228px;
+            height: 28px;
+            left: 509px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #copy{
+            width: 141px;
+            height: 27px;
+            left: 424px;
+            top: 325px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        #email{
+            width: 227px;
+            height: 40px;
+            left: 512px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #sigaeletro{
+            width: 169px;
+            height: 27px;
+            left: 820px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #twiter{
+            width: 39px;
+            height: 37.3px;
+            left: 885px;
+            top: 160px;
+        background: url(imagens/twiter-menor.png);
+        }
+        #whatszap{
+            width: 39px;
+            height: 41px;
+            left: 885px;
+            top: 255px;
+        background: url(imagens/whatszap-menor.png);
+        }
+        #facebook{
+            width: 39px;
+            height: 37px;
+            left: 885px;
+            top: 84px;
+            background: url(imagens/facebook-menor.png);
+        }
+        #youtube{
+            width: 39px;
+            height: 39px;
+            left: 885px;
+            top: 212px;
+            background: url(imagens/youtube-menor.png)
+        }
+        #instagram{
+            width: 39px;
+            height: 38.37px;
+            left: 885px;
+            top: 121px;
+            background: url(imagens/instagram-menor.png);
+        }
+        #emailimg{
+        width: 28px;
+        height: 22px;
+        left: 820px;
+        top: 185px; 
+        background: url(imagens/email-menor.png);
+        }
+}
+@media(width: 1440px){    
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        .navbar{
+            width: 1440px;
+            height: 120px;
+        }
+        .navbar-burger {  /*mexe no menu*/
+            width: 53px;
+            height: 39px;
+            left: 54px;
+            top: 37px;  
+          }
+          .navbar-menu > a > button.active {
+            font-size: 25px;
+          }
+        #logo{
+            width: 144px;
+            height: 120px;
+            left: 135px;
+            top: 0px;
+        }        
+        #carrinho{
+            width: 70px;
+            height: 62px;
+            left: 1351px;
+            top: 29px;            
+        }
+        #meio-alto {
+            width: 1440px;
+            height: 394px;
+            left: 0px;
+            top: 0px;
+            margin-top: 120px;
+            margin-bottom: -20px;
+        }
+        #meio-alto img {
+            width: 1440px;
+            height: 394px;
+        }
+        #meio {
+            width: 1440px;
+            height: 2148px;
+            left: 0px;
+            top: 394px;
+            gap: 15px;
+        }
+        #conteudo_1 {
+            margin-bottom: 150px;
+            gap: 150px;
+        }
+        #conteudo_1 img {
+            margin-bottom: -120px;
+            width: 1160px;
+            height: 169.016px;
+            margin-top: 100px;
+        }
+        #conteudo_1 h2 {
+            margin-bottom: -90px;
+            font-size: 36px;
+        }
+        #items {
+            gap: 80px;
+        }
+        .item {
+            width: 267px;
+            height: 384px;
+            gap: 15px;
+        }
+        .item_imagem {
+            width: 162.921px;
+            height: 169.531px;
+        }
+        .item_texto {
+            width: 248px;
+            height: 65px;
+            font-size: 14px;
+            margin-left: 2px;          
+        }
+        .item_butao {
+            width: 230.172px;
+            height: 60.145px;
+            font-size: 24px;
+        }
+        .item_preco {
+            font-size: 24px;
+            width: 200px;
+            height: 30px;
+        }
+        #meio_baixo{
+            width: 1440px;
+            height: 515px;
+            left: 0px;
+            top: 2542px;
+            margin-top: 50px;
+            gap: 100px;
+        }
+        #meio_baixo .geforce{
+            width: 1000px;
+            height: 145.703px;            
+        }
+        #meio_baixo .tdager{
+            width: 1000px;
+            height: 145.703px;            
+        }
+        footer{
+            width: 1440px;
+            height: 340px;
+            left: 0px;
+            top: 3250px;    
+        }
+        #contaepedido{
+            width: 135px;
+            height: 64px;
+            left: 107px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #chat{
+            width: 63px;
+            height: 23px;
+            left: 107px;
+            top: 159px;
+            font-size: 20px;
+            line-height: 24px; 
+        }
+        #chatimg{
+            width: 207px;
+            height: 46px;
+            left: 100px;
+            top: 181px;
+        }
+        #departamentosop{
+            width: 227px;
+            height: 77px;
+            left: 422px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;  
+        }
+        #institucional{
+            width: 300px;
+            height: 96px;
+            left: 422px;
+            top: 157px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #pagamentoimg{
+            width: 332px;
+            height: 54px;
+            left: 747px;
+            top: 88px;
+        }
+        #formasdepagar{
+            width: 228px;
+            height: 28px;
+            left: 756px;
+            top: 56px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #copy{
+            width: 181px;
+            height: 27px;
+            left: 629px;
+            top: 286px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #email{
+            width: 233px;
+            height: 48px;
+            left: 756px;
+            top: 155px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #sigaeletro{
+            width: 169px;
+            height: 27px;
+            left: 1217px;
+            top: 37px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        #twiter{
+            width: 36px;
+            height: 34.43px;
+            left: 1280px;
+            top: 148px;
+        background: url(imagens/twiter-menor.png);
+        }
+        #whatszap{
+            width: 39px;
+            height: 41px;
+            left: 1282px;
+            top: 229px;
+        background: url(imagens/whatszap-menor.png);
+        }
+        #facebook{
+            width: 39px;
+            height: 37px;
+            left: 1282px;
+            top: 64px;
+            background: url(imagens/facebook-menor.png);
+        }
+        #youtube{
+            width: 39px;
+            height: 39px;
+            left: 1282px;
+            top: 190px;
+            background: url(imagens/youtube-menor.png)
+        }
+        #instagram{
+            width: 39px;
+            height: 38.37px;
+            left: 1282px;
+            top: 107px;
+            background: url(imagens/instagram-menor.png);
+        }
+        #emailimg{
+        width: 28px;
+        height: 22px;
+        left: 1060px;
+        top: 183px; 
+        background: url(imagens/email-menor.png);
+        }
+}
+    
+    

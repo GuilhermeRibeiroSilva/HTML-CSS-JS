@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Logo-icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style Hardware.css">
+    <script src="js/script.js" defer></script>
+    <title>Eletronic Store</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><img id="logo" src="imagens/Logo.png" /></a>
+        <a href="#"><img id="carrinho" src="imagens/Carrinho.png" /></a>
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <img id="aba menu" src="imagens/Aba Menu.png" >
+        </button>
+        <nav class="navbar-menu">
+          <img src="imagens/Logo.png" >
+          <a href="Site Principal.html"><button type="button" class="active"><img src="imagens/icons8-casa.svg"> Inicio</button></a>
+          <a href="#"><button type="button" class="active"><img src="imagens/icons8-lupa.svg"> Pesquisa</button></a>
+          <input type="text" name="search" placeholder="Pesquisar..">
+          <a href="#"><button type="button" class="active"><img src="imagens/icons8-contato-23.png" > Cadastrar/Entrar</button></a>
+          <button type="button" class="active">
+            <details>
+            <summary>Departamentos</summary>
+            <p><a href="Site Hardware.html">Hardware</a></p>
+            <p><a href="Site Computadores.html">Computadores</a></p>
+            <p><a href="Site Perifericos.html">Periféricos</a></p>
+          </details>
+          </button>
+          <a href="#"><button type="button" class="active"><img src="imagens/sobre-nos.png" > Sobre</button></a>
+        </nav>
+    </nav>
+</header>
+        <section id="meio-alto">
+            <a href="#"><img src="imagens/Upgarde Atendimento.png" ></a>
+        </section>
+        <section id="meio">
+            <div id="conteudo_1">
+                <a href="#"><img src="imagens/Kits upgarde amd.png" ></a>
+                <h2>OFERTAS DE HARDWARE</h2>
+            </div>
+                <section id="items">
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/kit-upgrade-amd-ryzen-5-4600g.png" />
+                        <div class="item_texto">Kit Upgrade AMD Ryzen 5 4600G + Placa Mãe Biostar B450MHP + 16GB DDR4</div>
+                        <div class="item_preco">R$ 1.299,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/Rtx_3060 1.png" />
+                        <div class="item_texto">Placa de Vídeo RTX 3060 1-Click OC Galax GeForce, 12GB GDDR6, LHR, DLSS, Ray Tracing</div>
+                        <div class="item_preco">R$ 1.789,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/Kit upgrade intel.png" />
+                        <div class="item_texto">Kit Upgrade, Intel i3 10105F + Placa Mãe H510</div>
+                        <div class="item_preco">R$ 999,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/memoria-ddr4--32gb-.png" />
+                        <div class="item_texto">Memória DDR4 Geil Orion, 32GB (4x8GB) 3000MHz, Red</div>
+                        <div class="item_preco">R$ 635,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/athlon-pro-200ge-.png" />
+                        <div class="item_texto">Processador AMD Athlon PRO 200GE 3.2GHz + Cooler Gamemax Gamma 200 RGB</div>
+                        <div class="item_preco">R$ 429,90</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/memoria-ddr4- 16gb.png" />
+                        <div class="item_texto">Memória DDR4 XPG Gammix D10, 16GB (2x8GB) 3200Mhz, Black</div>
+                        <div class="item_preco">R$ 279,90</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/placa-mae-biostar-b450mhp-chipset-b450.png" />
+                        <div class="item_texto">Placa Mãe Biostar B450MHP, Chipset B450, AMD AM4, mATX, DDR4</div>
+                        <div class="item_preco">R$ 359,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/placa-de-video-gigabyte-nvidia-geforce-rtx-4060.png" />
+                        <div class="item_texto">Placa de Vídeo Gigabyte NVIDIA GeForce RTX 4060 EAGLE OC, 8GB, GDDR6, DLSS, Ray Tracing</div>
+                        <div class="item_preco">R$ 1.959,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/processador-amd-ryzen-5-5500-36ghz-42ghz-turbo.png" />
+                        <div class="item_texto">Processador AMD Ryzen 5 5500 3.6GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4</div>
+                        <div class="item_preco">R$ 649,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/ssd-wd-green-240gb.png" />
+                        <div class="item_texto">SSD WD Green SN350, 240GB, M.2 NVMe, Leitura 2400MB/s e Gravação 900MB/s</div>
+                        <div class="item_preco">R$ 129,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/ssd-kingston-a400-120gb-.png" />
+                        <div class="item_texto">SSD Kingston A400, 120GB, Sata III, Leitura 500MBs Gravação 320MBs</div>
+                        <div class="item_preco">R$ 69,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/placa-de-video-asus-geforce-rtx-3060-12gb.png" />
+                        <div class="item_texto">Placa de Vídeo Asus NVIDIA GeForce RTX 3060 DUAL OC V2, LHR, 12GB, GDDR6, DLSS, Ray Tracing</div>
+                        <div class="item_preco">R$ 1.799,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/fonte-gamemax-gp750-750w-.png" />
+                        <div class="item_texto">Fonte Gamemax GP750, 750W, 80 Plus Bronze</div>
+                        <div class="item_preco">R$ 299,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/processador-intel-core-i5-10400f-290ghz-430ghz-turbo-.png" />
+                        <div class="item_texto">Processador Intel Core i5 10400F 2.90GHz (4.30GHz Turbo), 10ª Geração, 6-Cores 12-Threads</div>
+                        <div class="item_preco">R$ 598,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/processador-amd-ryzen-5-7600-38ghz-51ghz-turbo-6-cores.png" />
+                        <div class="item_texto">Processador AMD Ryzen 5 7600 3.8GHz (5.1GHz Turbo), 6-Cores 12-Threads, AM5, Com Cooler AMD Wraith Stealth</div>
+                        <div class="item_preco">R$ 1.398,99</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="item_imagem" src="imagens/processador-intel-core-i9-14900kf-36-ghz-60ghz-turbo.png" />
+                        <div class="item_texto">Processador Intel Core i9 14900KF, 3.6 GHz (6.0GHz Turbo), 14ª Geração, 24-Cores 32-Threads</div>
+                        <div class="item_preco">R$ 3.989,00</div>
+                        <a class="item_butao" href="#">
+                            <div id="botaocomprar"></div>
+                            <div id="comprar">COMPRAR</div>
+                        </a>
+                    </div>
+                </section>
+                <div id="meio_baixo">
+                    <a href="#"><img class="inte" src="imagens/INTEL next level.png" alt=""></a>
+                    <a href="#"><img class="rtx" src="imagens/Rtx 2060 epic 2x.png" alt=""></a>
+                </div>
+            </section>
+            <footer>
+                <div>
+                    <a href="#">
+                        <div id="contaepedido">Minha Conta<br/>Meus Pedidos <br/>Cadastrar </div>
+                    </a>
+                    <div id="chat">Chat</div>
+                    <a href="#"><img id="chatimg" src="imagens/Atendimento_ao_Cliebte.png" /></a>
+                    <a href="#">
+                        <div id="departamentosop">Departamentos <br/>Hardware <br/>Periféricos<br/>Computadores</div>
+                    </a>
+                    <a href="#">
+                        <div id="institucional">Institucional <br/>Sobre o Eletronics Store<br/>Políticas do Site e Marketplace Políticas de Cookies <br/>Políticas de Privacidade</div>
+                    </a>
+                    <img id="pagamentoimg" src="imagens/Formas_Pagamento.png" />
+                    <div id="formasdepagar">Formas De Pagamento</div>
+                    <div id="copy">Copyright ©2023</div>
+                    <div id="email">Email<br/>faleconosco@Eletronics.com.br</div>
+                    <div id="sigaeletro">Siga a Eletronics</div>
+                    <a href="#">
+                        <div id="twiter"></div>
+                    </a>
+                    <a href="#">
+                        <div id="whatszap"></div>
+                    </a>
+                    <a href="#">
+                        <div id="facebook"></div>
+                    </a>
+                    <a href="#">
+                        <div id="instagram"></div>
+                    </a>
+                    <a href="#">
+                        <div id="youtube"></div>
+                    </a>
+                    <a href="#">
+                        <div id="emailimg"></div>
+                    </a>
+                </div>
+            </footer>
+</body>
+</html>
